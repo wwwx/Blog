@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+# Blog of Song Kong
+This is a Jekyll theme called Ice bear.
 
-You can use the [editor on GitHub](https://github.com/Risinfire/Blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+To learn how to install and use this theme, please check out the [installation guide](http://kongsong.me/blog/ice-bear-jekyll-theme/) for more information.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Risinfire/Blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+##License
+This theme is open source under MIT License. So feel free to use this Jekyll theme on your site, although linking back to me is more than welcomed.
