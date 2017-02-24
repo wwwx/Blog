@@ -1,37 +1,32 @@
-<footer id="footer">
-  <div class="footer-border"></div>
-  <div class="footer-content">
-    <div class="social-wrapper text-center">
-      <ul class="social-lists">
-        {% if site.email %}<li><a class="social-btn btn-white" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer" title="Mail me"><i class="fa fa-fw fa-envelope"></i></a></li>{% endif %}
-        {% if site.behance %}<li><a class="social-btn btn-white" href="https://www.behance.net/{{ site.behance }}" target="_blank" rel="noopener noreferrer" title="Follow me on Behance"><i class="fa fa-fw fa-behance"></i></a></li>{% endif %}
-        {% if site.twitter %}<li><a class="social-btn btn-white" href="http://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer" title="Follow me on Twitter"><i class="fa fa-fw fa-twitter"></i></a></li>{% endif %}
-        {% if site.facebook %}<li><a class="social-btn btn-white" href="http://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener noreferrer" title="Follow me on Facebook"><i class="fa fa-fw fa-facebook"></i></a></li>{% endif %}
-        {% if site.google.plus %}<li><a class="social-btn btn-white" href="http://plus.google.com/+{{ site.google.plus }}" target="_blank" rel="noopener noreferrer" title="Follow me on Google Plus"><i class="fa fa-fw fa-google-plus"></i></a></li>{% endif %}
-        {% if site.linkedin %}<li><a class="social-btn btn-white" href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer" title="Follow me on Linkedin"><i class="fa fa-fw fa-linkedin"></i></a></li>{% endif %}
-        {% if site.xing %}<li><a class="social-btn btn-white" href="http://www.xing.com/profile/{{ site.xing }}" target="_blank" rel="noopener noreferrer" title="Follow me on Xing"><i class="fa fa-fw fa-xing"></i></a></li>{% endif %}
-        {% if site.instagram %}<li><a class="social-btn btn-white" href="http://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener noreferrer" title="Follow me on Instagram"><i class="fa fa-fw fa-instagram"></i></a></li>{% endif %}
-        {% if site.tumblr %}<li><a class="social-btn btn-white" href="http://{{ site.tumblr }}.tumblr.com" target="_blank" rel="noopener noreferrer" title="Follow me on Tumblr"><i class="fa fa-fw fa-tumblr"></i></a></li>{% endif %}
-        {% if site.github %}<li><a class="social-btn btn-white" href="http://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer" title="Follow me on Github"><i class="fa fa-fw fa-github"></i></a></li>{% endif %}
-        {% if site.stackoverflow %}<li><a class="social-btn btn-white" href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank" rel="noopener noreferrer" title="Follow me on Stackoverflow"><i class="fa fa-fw fa-stack-overflow"></i></a></li>{% endif %}
-        {% if site.lastfm %}<li><a class="social-btn btn-white" href="http://lastfm.com/user/{{ site.lastfm }}" target="_blank" rel="noopener noreferrer" title="Follow me on Lastfm"><i class="fa fa-fw fa-music"></i></a></li>{% endif %}
-        {% if site.dribbble %}<li><a class="social-btn btn-white" href="http://dribbble.com/{{ site.dribbble }}" target="_blank" rel="noopener noreferrer" title="Follow me on Dribbble"><i class="fa fa-fw fa-dribbble"></i></a></li>{% endif %}
-        {% if site.pinterest %}<li><a class="social-btn btn-white" href="http://www.pinterest.com/{{ site.pinterest }}" target="_blank" rel="noopener noreferrer" title="Follow me on Pinterest"><i class="fa fa-fw fa-pinterest"></i></a></li>{% endif %}
-        {% if site.foursquare %}<li><a class="social-btn btn-white" href="http://foursquare.com/{{ site.foursquare }}" target="_blank" rel="noopener noreferrer" title="Follow me on Foursquare"><i class="fa fa-fw fa-foursquare"></i></a></li>{% endif %}
-        {% if site.steam %}<li><a class="social-btn btn-white" href="http://steamcommunity.com/id/{{ site.steam }}" target="_blank" rel="noopener noreferrer" title="Follow me on Steam"><i class="fa fa-fw fa-steam"></i></a></li>{% endif %}
-        {% if site.youtube %}<li><a class="social-btn btn-white" href="https://youtube.com/user/{{ site.youtube }}" target="_blank" rel="noopener noreferrer" title="Follow me on Youtube"><i class="fa fa-fw fa-youtube"></i></a></li>{% endif %}
-        {% if site.soundcloud %}<li><a class="social-btn btn-white" href="http://soundcloud.com/{{ site.soundcloud }}" target="_blank" rel="noopener noreferrer" title="Follow me on Soundcloud"><i class="fa fa-fw fa-soundcloud"></i></a></li>{% endif %}
-        {% if site.weibo %}<li><a class="social-btn btn-white" href="http://www.weibo.com/{{ site.weibo }}" target="_blank" rel="noopener noreferrer" title="Follow me on Weibo"><i class="fa fa-fw fa-weibo"></i></a></li>{% endif %}
-        {% if site.flickr %}<li><a class="social-btn btn-white" href="http://www.flickr.com/{{ site.flickr }}" target="_blank" rel="noopener noreferrer" title="Follow me on Flickr"><i class="fa fa-fw fa-flickr"></i></a></li>{% endif %}
-        {% if site.codepen %}<li><a class="social-btn btn-white" href="http://codepen.io/{{ site.codepen }}" target="_blank" rel="noopener noreferrer" title="Follow me on Codepen"><i class="fa fa-fw fa-codepen"></i></a></li>{% endif %}
-        {% if site.keybase %}<li><a class="social-btn btn-white" href="https://keybase.io/{{ site.keybase }}" target="_blank" rel="noopener noreferrer" title="Follow me on Keybase"><i class="fa fa-fw fa-key"></i></a></li>{% endif %}
-        {% if site.xmpp %}<li><a class="social-btn btn-white" href="xmpp:{{ site.xmpp }}" target="_blank" rel="noopener noreferrer" title="Follow me on Xmpp"><i class="fa fa-fw fa-lightbulb-o"></i></a></li>{% endif %}
-        {% if site.hackernews %}<li><a class="social-btn btn-white" href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer" title="Follow me on Hackernews"><i class="fa fa-fw fa-hacker-news"></i></a></li>{% endif %}
-      </ul>
+<footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="mailto:{{ site.email }}"><span class="glyphicon glyphicon-envelope"></span> {{ site.email }}</a>
+        <span class="point"> · </span>
+        {% if site.github_username %}
+          
+          <a href="https://github.com/{{ site.github_username }}">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>{{ site.github_username }}</span> -->
+          </a>
+          
+          {% endif %}
+          <span class="point"> · </span>
+          <span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></span>
+          <span class="point"> · </span>
+          <span>{{ site.description }}</span>
+          <span class="point"> · </span>
+          <span>&copy; 2015 Gaohaoyang</span>
+          <span class="point"> · </span>
+          <span>Designed by <a href="https://github.com/Gaohaoyang">HyG</a></span>
+
+      </div>
     </div>
-    <div class="copyright text-center">Copyright © 2016 {{ site.author.name }}. Powered by Jekyll.</div>
-  </div>
-  <div id="top" class="btn-top" style="display:none">
-    <a href=" #header "><i class="fa fa-paw" aria-hidden="true"></i></a>
   </div>
 </footer>
