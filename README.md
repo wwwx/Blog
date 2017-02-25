@@ -2,7 +2,7 @@
 
 # About
 
-** This is my blog based on Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io) **
+    ** This is my blog based on Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io) **
 
 
 
