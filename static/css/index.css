@@ -58,6 +58,9 @@ nav{
 	width: 95px;
 	text-align: center;
 }
+.navbar-text {
+	margin-top:16px; margin-bottom:14px;
+}
 
 /* index main */
 .main{
