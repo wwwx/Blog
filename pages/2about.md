@@ -7,6 +7,22 @@ icon: glyphicon-heart
 
 ### 关于我
 
+> 小小前端开发工程师一枚， 好好学习天天向上。
+
+
+
+### 联系我
+
+* email：[risin_wangx@outlook.com](mailto:{{ site.email }})
+* QQ：834166254
+
+
+
+
+
+<!--
+### 关于我
+
 > 2015年我将步入找工作的大潮，希望做一个前端开发工程师。   
 
 在校硕士研究生一枚，就读于西安交通大学软件工程专业，2016年毕业。   
@@ -60,3 +76,4 @@ Comment below to exchange link with me.
 ---
 
 只要有空一定会更新的！
+-->

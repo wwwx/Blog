@@ -77,6 +77,12 @@ nav{
 	font-size: 30px;
 	font-weight: bold;
 }
+.post-list-header small {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.2;
+}
 .post-list-item{
 	display: block;
 	padding:8px 30px 10px 30px; 
