@@ -3,18 +3,21 @@
  */
 $(document).ready(function(){
 
-    $.get('/github/sgone/include/header.html', function(data){
+    var uri = document.location.href;
+    var baseurl = uri.slice(0, uri.indexOf('index'));
+
+    $.get(baseurl+'include/header.html', function(data){
         $('#header_all').html(data);
     })
 
-    $.get('/github/sgone/include/footer.html', function(data){
+    $.get(baseurl+'include/footer.html', function(data){
         $('#footer').html(data)
     })
 
     var urls = localStorage.getItem('url');
     if (urls == null)
     {
-        $.get('/github/sgone/home.html', function(data){
+        $.get(baseurl+'home.html', function(data){
             $('#main').html(data);
         })
     }
