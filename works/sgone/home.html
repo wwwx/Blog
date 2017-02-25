@@ -1,0 +1,79 @@
+<div class="wrap">
+    <div class="title">
+        <img src="images/top.png" width="100%" alt="">
+    </div>
+    <div class="banner pr mgb10 border_b">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/ban_1.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="images/ban_1.jpg" width="100%" /></div>
+            <div class="swiper-slide"><img src="images/ban_1.jpg" width="100%" /></div>
+        </div>
+        <div class="swiper-pagination banner_pagination"></div>
+    </div>
+
+    <div class="freshFruit mgb10">
+        <div class="title red ta_c">——&nbsp;时令鲜果&nbsp;——</div>
+        <div class="banner_fruit pr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">1</div>
+                <div class="swiper-slide">2</div>
+                <div class="swiper-slide">3</div>
+                <div class="swiper-slide">4</div>
+                <div class="swiper-slide">5</div>
+                <div class="swiper-slide">6</div>
+            </div>
+            <div class="swiper-pagination banner_fruit_pagination"></div>
+        </div>
+    </div>
+
+    <div class="newPuzzle pr border_t_b mgb10">
+        <a href="###"><img src="images/fruit-img2.png" width="100%" alt=""></a>
+    </div>
+
+    <div class="container clearfix" style="border-top:1px solid #dfdfdf;"></div>
+</div>
+
+<script>
+    var data = [
+        {img:'img', txt:'apple is good', num:25},
+        {img:'img', txt:'apple is good', num:25},
+        {img:'img', txt:'apple is good', num:25},
+        {img:'img', txt:'apple is good', num:25},
+        {img:'img', txt:'apple is good', num:25},
+        {img:'img', txt:'apple is good', num:25},
+        {img:'img', txt:'apple is good', num:25}
+    ]
+
+    var box = '<dl>\
+                <dt>%s</dt>\
+                <dd>%s</dd>\
+                <dd>%s</dd>\
+            </dl>'
+
+    for(var i=0; i<data.length; i++){
+        var friut = data[i];
+        $('.container').append(sprintf(box, friut.img, friut.txt, friut.num));
+    }
+
+
+    // banner 轮播
+    var banner = new Swiper('.banner', {
+        loop:false,
+        pagination:'.banner_pagination',
+        autoplay:3000,
+        speed:500
+    })
+
+    // banner_fruit 轮播
+    var banner = new Swiper('.banner_fruit', {
+        loop:false,
+        pagination:'.banner_fruit_pagination',
+        slidesPerView:3,
+        spaceBetween:10
+    })
+
+    function search () {
+        toast('定位失败..')
+    }
+
+</script>
