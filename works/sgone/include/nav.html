@@ -27,18 +27,21 @@
 
     $(document).ready(function(){
         $('.footer a').click(function(){
+            var that = $(this);
             var rel = $(this).attr('rel');
             if(!rel){
                 return false;
             } else {
-                $(this).addClass('active').siblings().removeClass('active');
-                $('#main').load(rel);
-                if($('html').scrollTop()) {
-                    $('html').animate({ scrollTop: 0 }, 500);
+                $.get(rel, function(data){
+                    $('#main').html(data);
+                    that.addClass('active').siblings().removeClass('active');
+                    if($('html').scrollTop()) {
+                        $('html').animate({ scrollTop: 0 }, 200);
+                        return false;
+                    }
+                    $('body').animate({ scrollTop: 0 }, 200);
                     return false;
-                }
-                $('body').animate({ scrollTop: 0 }, 500);
-                return false;
+                });
             }
         })
     })

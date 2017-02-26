@@ -6,12 +6,8 @@ $(document).ready(function(){
     var href = document.location.href;
     var rootUri = href.substr(0, href.indexOf('index'));
     console.log(rootUri);
-    $.get(rootUri+'include/header.html', function(data){
-        $('#header_all').html(data);
-    })
-
-    $.get(rootUri+'include/footer.html', function(data){
-        $('#footer').html(data)
+    $.get(rootUri+'include/nav.html', function(data){
+        $('#nav').html(data)
     })
 
     var urls = localStorage.getItem('url');
@@ -25,7 +21,6 @@ $(document).ready(function(){
     {
         $.get(urls, function(data){
             $('#main').html(data);
-            document.scrollTop = 0;
         })
     }
 
