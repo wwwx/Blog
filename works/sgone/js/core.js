@@ -38,6 +38,8 @@ var storage = {
 
 // 定时器
 var intervalCounter = null;
+//
+//
 
 // 错误提示功能 下面黑色小弹出层
 function toast (message) {

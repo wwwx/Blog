@@ -3,21 +3,20 @@
  */
 $(document).ready(function(){
 
-    var uri = document.location.href;
-    var baseurl = uri.slice(0, uri.indexOf('index'));
+    var rootUri = '/Blog/works/sgone/';
 
-    $.get(baseurl+'include/header.html', function(data){
+    $.get(rootUri+'include/header.html', function(data){
         $('#header_all').html(data);
     })
 
-    $.get(baseurl+'include/footer.html', function(data){
+    $.get(rootUri+'include/footer.html', function(data){
         $('#footer').html(data)
     })
 
     var urls = localStorage.getItem('url');
     if (urls == null)
     {
-        $.get(baseurl+'home.html', function(data){
+        $.get(rootUri+'home.html', function(data){
             $('#main').html(data);
         })
     }
