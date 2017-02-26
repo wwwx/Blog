@@ -1,17 +1,17 @@
 <div class="footer bg_white border_t">
-    <a class="m1 active">
+    <a class="m1 active" rel="home.html">
         <em></em>
         <p>首页</p>
     </a>
-    <a class="m2">
+    <a class="m2" rel="">
         <em></em>
         <p>拼团</p>
     </a>
-    <a class="m3" href="loading.html">
+    <a class="m3" rel="loading.html">
         <em></em>
         <p>购物车</p>
     </a>
-    <a class="m4" href="canvas.html">
+    <a class="m4" rel="canvas.html">
         <em></em>
         <p>我的</p>
     </a>
@@ -24,5 +24,23 @@
 </div>
 
 <script>
+
+    $(document).ready(function(){
+        $('.footer a').click(function(){
+            var rel = $(this).attr('rel');
+            if(!rel){
+                return false;
+            } else {
+                $(this).addClass('active').siblings().removeClass('active');
+                $('#main').load(rel);
+                if($('html').scrollTop()) {
+                    $('html').animate({ scrollTop: 0 }, 500);
+                    return false;
+                }
+                $('body').animate({ scrollTop: 0 }, 500);
+                return false;
+            }
+        })
+    })
 
 </script>

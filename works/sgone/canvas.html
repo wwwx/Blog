@@ -1,205 +1,140 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta content="telephone=no" name="format-detection" />
-    <meta name="screen-orientation" content="portrait" />
-    <meta name="x5-orientation" content="portrait" />
-    <title>Document</title>
-
-
-<!-- stlye     -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-<!-- stlye     -->
-    
-
-</head>
-<body>
-    
-<div class="allWrap">
-    
-    <canvas id="can"></canvas><br>
-    <canvas id="clock" width="160" height="160"></canvas>
-
-
-
-    <div class="footer bg_white border_t">
-        <a class="m1" href="index.html">
-            <em></em>
-            <p>首页</p>
-        </a>
-        <a class="m2">
-            <em></em>
-            <p>拼团</p>
-        </a>
-        <a class="m3" href="loading.html">
-            <em></em>
-            <p>购物车</p>
-        </a>
-        <a class="m4 active" href="canvas.html">
-            <em></em>
-            <p>我的</p>
-        </a>
-    </div><!-- footer -->
-</div>
-
-    
-
-
-
-<!-- script -->
-    <script src="js/jquery-2.0.3.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/fastclick.min.js"></script>
-    <script src='js/core.js'></script>
-<!-- script -->
-
+<canvas id="can"></canvas><br>
+<canvas id="clock" width="160" height="160"></canvas>
 
 <script>
 
-window.onload = function(){
+    window.onload = function(){
 
-    var canvas = document.getElementById('can');
-    var c = canvas.getContext('2d');
+        var canvas = document.getElementById('can');
+        var c = canvas.getContext('2d');
 
-    c.beginPath();
-    polygon(c, 4, 50, 70, 50, Math.PI/4);
-    polygon(c, 6, 150, 70, 50, Math.PI/6);
-    c.strokeStyle = '#000';
-    c.lineWidth = 1;
-    c.stroke();
+        c.beginPath();
+        polygon(c, 4, 50, 70, 50, Math.PI/4);
+        polygon(c, 6, 150, 70, 50, Math.PI/6);
+        c.strokeStyle = '#000';
+        c.lineWidth = 1;
+        c.stroke();
 
 
 
-}
+    }
 
-var clock_can = document.getElementById('clock');
-var o = clock_can.getContext('2d');
-setInterval(clock, 1000)
-// 绘制多边形
-function polygon (c, n, x, y, r, angle, counterclockwise) {
-    angle = angle || 0;
-    counterclockwise = counterclockwise || false;
-    c.moveTo(x + r * Math.sin(angle),   
-             y - r * Math.cos(angle));
-    var delta = 2 * Math.PI/n;
-    for (var i=1; i<n; i++) {
-        angle += counterclockwise ? -delta : delta;
-        c.lineTo(x + r * Math.sin(angle),   
+    var clock_can = document.getElementById('clock');
+    var o = clock_can.getContext('2d');
+    setInterval(clock, 1000)
+    // 绘制多边形
+    function polygon (c, n, x, y, r, angle, counterclockwise) {
+        angle = angle || 0;
+        counterclockwise = counterclockwise || false;
+        c.moveTo(x + r * Math.sin(angle),
                  y - r * Math.cos(angle));
+        var delta = 2 * Math.PI/n;
+        for (var i=1; i<n; i++) {
+            angle += counterclockwise ? -delta : delta;
+            c.lineTo(x + r * Math.sin(angle),
+                     y - r * Math.cos(angle));
+        }
+        c.closePath();
     }
-    c.closePath();
-}
 
-// 绘制时钟
-function clock ()
-{
-    o.clearRect(0, 0, 160, 160)
-    o.save();
-    // 时钟外边框
-    o.beginPath();
-    o.strokeStyle = '#f60';
-    o.lineWidth = 6;
-    o.shadowColor = '#666';
-    o.shadowOffsetX = 3;
-    o.shadowOffsetY = 1;
-    o.shadowBlur = 3
-    o.arc(80, 80, 72, 0, Math.PI * 2);
-    o.stroke();
-    o.closePath();
-    o.restore();
-
-    for (var i = 0; i < 60; i++)
+    // 绘制时钟
+    function clock ()
     {
-        // 时钟刻度
-        if (i % 5 == 0)
+        o.clearRect(0, 0, 160, 160)
+        o.save();
+        // 时钟外边框
+        o.beginPath();
+        o.strokeStyle = '#f60';
+        o.lineWidth = 6;
+        o.shadowColor = '#666';
+        o.shadowOffsetX = 3;
+        o.shadowOffsetY = 1;
+        o.shadowBlur = 3
+        o.arc(80, 80, 72, 0, Math.PI * 2);
+        o.stroke();
+        o.closePath();
+        o.restore();
+
+        for (var i = 0; i < 60; i++)
         {
-            o.save();
-            o.beginPath();
-            o.translate(80, 80);
-            o.rotate(i * 6 * Math.PI / 180)
-            o.strokeStyle = '#333';
-            o.lineWidth = 4;
-            o.moveTo(0, -72);
-            o.lineTo(0, -68);
-            o.stroke();
-            o.closePath();
-            o.restore();
+            // 时钟刻度
+            if (i % 5 == 0)
+            {
+                o.save();
+                o.beginPath();
+                o.translate(80, 80);
+                o.rotate(i * 6 * Math.PI / 180)
+                o.strokeStyle = '#333';
+                o.lineWidth = 4;
+                o.moveTo(0, -72);
+                o.lineTo(0, -68);
+                o.stroke();
+                o.closePath();
+                o.restore();
+            }
+            else
+            {
+                o.save();
+                o.beginPath();
+                o.translate(80, 80);
+                o.rotate(i * 6 * Math.PI / 180)
+                o.strokeStyle = '#999';
+                o.lineWidth = 2;
+                o.moveTo(0, -72);
+                o.lineTo(0, -70);
+                o.stroke();
+                o.closePath();
+                o.restore();
+            }
         }
-        else
-        {
-            o.save();
-            o.beginPath();
-            o.translate(80, 80);
-            o.rotate(i * 6 * Math.PI / 180)
-            o.strokeStyle = '#999';
-            o.lineWidth = 2;
-            o.moveTo(0, -72);
-            o.lineTo(0, -70);
-            o.stroke();
-            o.closePath();
-            o.restore();
-        }
+        // 获取当前时间
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+//        console.log(h + ' : ' + m + ' : ' + s);
+
+        // 时针
+        o.save();
+        o.beginPath();
+        o.strokeStyle = '#f00';
+        o.translate(80, 80);
+        o.rotate(h * 30 * Math.PI / 180);
+        o.lineWidth = 3;
+        o.moveTo(0, 10);
+        o.lineTo(0, -32);
+        o.stroke();
+        o.closePath();
+        o.restore();
+
+
+        // 分针
+        o.save();
+        o.beginPath();
+        o.strokeStyle = '#00f';
+        o.translate(80, 80);
+        o.rotate(m * 6   * Math.PI / 180);
+        o.lineWidth = 2;
+        o.moveTo(0, 10);
+        o.lineTo(0, -48);
+        o.stroke();
+        o.closePath();
+        o.restore();
+
+        // 秒针
+        o.save();
+        o.beginPath();
+        o.strokeStyle = '#0ff';
+        o.translate(80, 80);
+        o.rotate(s * 6 * Math.PI / 180);
+        o.lineWidth = 2;
+        o.moveTo(0, 10);
+        o.lineTo(0, -64);
+        o.stroke();
+        o.closePath();
+        o.restore();
+
+
     }
-    // 获取当前时间
-    var d = new Date();
-    var h = d.getHours();
-    var m = d.getMinutes();
-    var s = d.getSeconds();
-    console.log(h + ' : ' + m + ' : ' + s);
-
-    // 时针
-    o.save();
-    o.beginPath();
-    o.strokeStyle = '#f00';
-    o.translate(80, 80);
-    o.rotate(h * 30 * Math.PI / 180);
-    o.lineWidth = 3;
-    o.moveTo(0, 10);
-    o.lineTo(0, -32);
-    o.stroke();
-    o.closePath();
-    o.restore();
-
-
-    // 分针
-    o.save();
-    o.beginPath();
-    o.strokeStyle = '#00f';
-    o.translate(80, 80);
-    o.rotate(m * 6   * Math.PI / 180);
-    o.lineWidth = 2;
-    o.moveTo(0, 10);
-    o.lineTo(0, -48);
-    o.stroke();
-    o.closePath();
-    o.restore();
-
-    // 秒针
-    o.save();
-    o.beginPath();
-    o.strokeStyle = '#0ff';
-    o.translate(80, 80);
-    o.rotate(s * 6 * Math.PI / 180);
-    o.lineWidth = 2;
-    o.moveTo(0, 10);
-    o.lineTo(0, -64);
-    o.stroke();
-    o.closePath();
-    o.restore();
-
-
-}
-
-
 
 </script>
-</body>
-</html>

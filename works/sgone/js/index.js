@@ -3,8 +3,9 @@
  */
 $(document).ready(function(){
 
-    var rootUri = '/Blog/works/sgone/';
-
+    var href = document.location.href;
+    var rootUri = href.substr(0, href.indexOf('index'));
+    console.log(rootUri);
     $.get(rootUri+'include/header.html', function(data){
         $('#header_all').html(data);
     })
@@ -23,7 +24,8 @@ $(document).ready(function(){
     else
     {
         $.get(urls, function(data){
-            $('#content').html(data);
+            $('#main').html(data);
+            document.scrollTop = 0;
         })
     }
 
