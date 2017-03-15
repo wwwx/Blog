@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Document</title>
+    <title>scroll</title>
 
     <style>
         * {
@@ -21,10 +21,15 @@
             width:100%;
         }
         li {
+            position:relative;
+            top:0;
+            right:0;
             font-size:24px;
             line-height: 2.5em;
             text-align: center;
-            border-bottom:1px solid #ccc;
+            border-bottom:1px solid #f6f6f6;
+            background:#fff;
+            z-index: 1;
         }
         
         #wrapper {
@@ -34,7 +39,7 @@
             bottom:0;
             width:25%;
             overflow: auto;
-            border-right:1px solid #ccc;
+            /*border-right:1px solid #dfdfdf;*/
         }
     </style>
 
@@ -69,8 +74,7 @@
     </div>
 
     
-    <script src="../../libs/jquery/1.10.1/jquery-1.10.1.js"></script>
-    <script src="../../../risin_wx/myNote/collection.js"></script>
+    <script src="../../static/libs/scripts/move.js"></script>
     <script src="scroll.js"></script>
     <script>
         
@@ -100,7 +104,31 @@
     addEventListener('load', loaded, false);
     addEventListener('load', Ajax, false);
     
-
+    window.onload = function(){
+        var wrapper = document.getElementById('wrapper');
+        var scrollbox = wrapper.getElementsByTagName('ul')[0];
+        var items = scrollbox.getElementsByTagName('li');
+        var docH = document.documentElement.clientHeight;
+        var scrollboxH = scrollbox.offsetHeight;
+        // console.log(scrollbox.offsetHeight);
+        scrollbox.addEventListener('click', function(ev){
+            var ev = ev || window.event;
+            var target = ev.target;
+            // console.log(target.nodeName)
+            if(target.nodeName.toUpperCase() === 'LI'){
+                for(var i=0, len = items.length; i<len; i++ ){
+                    items[i].style.background = '#fff';
+                    items[i].style.borderRight = '';
+                }
+                target.style.backgroundColor = '#f6f6f6';
+                target.style.borderRight = '1px solid #f6f6f6';
+            }
+            if((scrollboxH - target.offsetTop) > docH){
+                startMove(scrollbox, {top: -target.offsetTop});
+            }
+            ev.preventDefault();
+        }, false)
+    }
 
 
 
