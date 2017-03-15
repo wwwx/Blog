@@ -112,9 +112,10 @@
         var scrollboxH = scrollbox.offsetHeight;
         // console.log(scrollbox.offsetHeight);
         scrollbox.addEventListener('click', function(ev){
+
             var ev = ev || window.event;
             var target = ev.target;
-            // console.log(target.nodeName)
+            console.log(target.offsetBottom)
             if(target.nodeName.toUpperCase() === 'LI'){
                 for(var i=0, len = items.length; i<len; i++ ){
                     items[i].style.background = '#fff';
@@ -123,8 +124,8 @@
                 target.style.backgroundColor = '#f6f6f6';
                 target.style.borderRight = '1px solid #f6f6f6';
             }
-            if((scrollboxH - target.offsetTop) > docH){
-                startMove(scrollbox, {top: -target.offsetTop});
+            if((scrollboxH + scrollbox.offsetTop) > docH){
+                startMove(scrollbox, {top: -target.offsetTop+20});
             }
             ev.preventDefault();
         }, false)
