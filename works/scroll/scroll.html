@@ -85,24 +85,7 @@
         }, 100);
     }
 
-    function Ajax(){
-        $.ajax({
-            type:'get',
-            url:'https://api.douban.com/v2/book/search?q=javascript&alt=json&callback=fn1&start=1&count=20',
-            cache:false,
-            dataType:'jsonp',
-            jsonpCallback:'fn1',
-            success:function(res){
-                console.log(res);
-            },
-            error:function(error){
-                console.log(error);
-            }
-        })
-    }
-
     addEventListener('load', loaded, false);
-    addEventListener('load', Ajax, false);
     
     window.onload = function(){
         var wrapper = document.getElementById('wrapper');
@@ -115,7 +98,6 @@
 
             var ev = ev || window.event;
             var target = ev.target;
-            console.log(target.offsetBottom)
             if(target.nodeName.toUpperCase() === 'LI'){
                 for(var i=0, len = items.length; i<len; i++ ){
                     items[i].style.background = '#fff';
@@ -124,8 +106,12 @@
                 target.style.backgroundColor = '#f6f6f6';
                 target.style.borderRight = '1px solid #f6f6f6';
             }
-            if((scrollboxH + scrollbox.offsetTop) > docH){
-                startMove(scrollbox, {top: -target.offsetTop+20});
+           if((scrollboxH + scrollbox.offsetTop) > docH){
+                startMove(scrollbox, {top: -target.offsetTop+20}, function(){
+                    if((scrollboxH + scrollbox.offsetTop) < docH){
+                        startMove(scrollbox, {top: scrollboxH-docH});
+                    }
+                });
             }
             ev.preventDefault();
         }, false)
