@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        ul, li {
+            list-style:none;
+        }
+        ul {
+            width:100%;
+        }
+        li {
+            font-size:24px;
+            line-height: 2.5em;
+            text-align: center;
+            border-bottom:1px solid #ccc;
+        }
+        
+        #wrapper {
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            width:25%;
+            overflow: auto;
+            border-right:1px solid #ccc;
+        }
+    </style>
+
+
+
+</head>
+<body style="background:#f6f6f6;">
+
+    <div id="wrapper">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+        </ul>
+    </div>
+
+    
+    <script src="../../libs/jquery/1.10.1/jquery-1.10.1.js"></script>
+    <script src="../../../risin_wx/myNote/collection.js"></script>
+    <script src="scroll.js"></script>
+    <script>
+        
+    var myscroll;
+    function loaded(){
+        setTimeout(function(){
+            myscroll = new iScroll('wrapper');
+        }, 100);
+    }
+
+    function Ajax(){
+        $.ajax({
+            type:'get',
+            url:'https://api.douban.com/v2/book/search?q=javascript&alt=json&callback=fn1&start=1&count=20',
+            cache:false,
+            dataType:'jsonp',
+            jsonpCallback:'fn1',
+            success:function(res){
+                console.log(res);
+            },
+            error:function(error){
+                console.log(error);
+            }
+        })
+    }
+
+    addEventListener('load', loaded, false);
+    addEventListener('load', Ajax, false);
+    
+
+
+
+
+    </script>
+</body>
+</html>
