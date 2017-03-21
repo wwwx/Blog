@@ -71,7 +71,7 @@ img {
     font-size:18px;
     font-weight: 900;
 }
-.navbar li a.active {
+.navbar li.active a {
     background-color: #f99200; 
 }
 .content {
