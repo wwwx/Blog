@@ -180,14 +180,14 @@ h3.title {
     border-radius: 0; 
     text-align: center;  
 }
-.goodstore div.desc {
+.goodstore div.descr {
     float: left;
     position: relative;
     width: 100%;
     min-height: 82px;
     background-color: #f95800;
 }
-.goodstore .desc-logo {
+.goodstore .descr-logo {
     position: absolute;
     left: 50%;
     top: -50%;
@@ -197,17 +197,18 @@ h3.title {
     height: 64px;
     background: #fff;
     border-radius: 50%;
+    z-index: 2;
 }
-.goodstore .desc-tit {
+.goodstore .descr-tit {
     margin-top: 32px;
     color: #fff;
 }
-.goodstore .desc-discount {
+.goodstore .descr-discount {
     color: #e7ff00;
     font-size: 18px;
     font-weight: 900;
 }
-.goodstore .agricultural .desc-logo {
+.goodstore .agricultural .descr-logo {
     background-color: #c0dca9;
 }
 
