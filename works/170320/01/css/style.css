@@ -132,6 +132,10 @@ h3.title {
     text-align: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+   /* display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;*/
 }
 .pic img {
     position: relative;
@@ -222,6 +226,7 @@ h3.title {
     right: 0;
     left: 0;
 }
+
 
 
 
