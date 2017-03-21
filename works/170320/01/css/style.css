@@ -27,20 +27,20 @@ img {
 }
 
 .clearfix:after {
-    content:"";
+    content: "";
     display: block;
-    clear:both;
-    height:0;
-    visibility:hidden;
+    clear: both;
+    height: 0;
+    visibility: hidden;
 }
 .hide {
     display: none;
 }
 .fl {
-    float:left;
+    float: left;
 }
 .fr {
-    float:right;
+    float: right;
 }
 
 .wrapper {
@@ -69,8 +69,8 @@ img {
 .navbar li a {
     display: block;
     padding:0 10px;
-    color:#fff;
-    font-size:18px;
+    color: #fff;
+    font-size: 18px;
     font-weight: 900;
 }
 .navbar li.active a {
@@ -87,19 +87,19 @@ img {
     border-radius: 6px;
 }
 h3.title {
-    height:42px;
+    height: 42px;
     line-height: 42px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     text-align: center;
-    background:url("../images/title_bg.png") no-repeat center;
-    background-size:contain;
-    font-size:20px;
-    color:#f95800;
+    background: url("../images/title_bg.png") no-repeat center;
+    background-size: contain;
+    font-size: 20px;
+    color: #f95800;
 }
 .ul-stlye li {
     float: left;
     width: 49.5%;
-    padding:6px;
+    padding: 6px;
     margin-bottom: 5px;
     margin-right: 1%;
     background-color: #fff;
@@ -117,24 +117,52 @@ h3.title {
     min-height: 162px;
 }
 .ul-stlye li p {
-    font-size:14px;
-    line-height:1.2em;
-    margin:5px 0;
+    font-size: 14px;
+    line-height: 1.2em;
+    margin: 5px 0;
 }
 .ul-stlye li p i {
     font-style: normal;
 }
+.sold_out {
+    position: relative;
+    min-height: 162px;
+    background-color: #e6e6e6;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.sold_out img {
+    position: relative;
+    z-index: 1;
+}
+.bg_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 32px;
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+}
+.desc {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
 .price span:first-child {
-    color:#f95800;
+    color: #f95800;
     font-size: 18px;
 }
 .price span:first-child small {
-    font-size:12px;
+    font-size: 12px;
 }
 .price span:last-child {
     font-size: 12px;
-    color:#c9c9c9;
-    padding-top:2px;
+    color: #c9c9c9;
+    padding-top: 2px;
 }
 .btn-buy {
     display: block;
@@ -142,9 +170,9 @@ h3.title {
     padding: 8px 0;
     text-align: center;
     border-radius: 6px;
-    background-color:#f95800;
+    background-color: #f95800;
     color:#fff;
-    font-size:18px;
+    font-size: 18px;
 }
 
 .goodstore .ul-stlye li {
@@ -153,31 +181,31 @@ h3.title {
     text-align: center;  
 }
 .goodstore div.desc {
-    float:left;
-    position:relative;
-    width:100%;
-    min-height:82px;
+    float: left;
+    position: relative;
+    width: 100%;
+    min-height: 82px;
     background-color: #f95800;
 }
 .goodstore .desc-logo {
-    position:absolute;
-    left:50%;
-    top:-50%;
-    margin-top:6px;
-    margin-left:-32px;
-    width:64px;
-    height:64px;
-    background:#fff;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    margin-top: 6px;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    background: #fff;
     border-radius: 50%;
 }
 .goodstore .desc-tit {
-    margin-top:32px;
-    color:#fff;
+    margin-top: 32px;
+    color: #fff;
 }
 .goodstore .desc-discount {
-    color:#e7ff00;
-    font-size:18px;
-    font-weight:900;
+    color: #e7ff00;
+    font-size: 18px;
+    font-weight: 900;
 }
 .goodstore .agricultural .desc-logo {
     background-color: #c0dca9;
@@ -187,10 +215,10 @@ h3.title {
  * 导航顶部固定
  ***************/
 .stick {
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 
