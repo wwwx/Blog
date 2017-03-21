@@ -50,6 +50,9 @@ img {
     margin: 0 auto;
     background-color: #ffebc0;
 }
+.nav {
+    position:relative;
+}
 .navbar {
     height: 38px;
     background: #00bd2c;
@@ -70,6 +73,9 @@ img {
 }
 .navbar li a.active {
     background-color: #f99200; 
+}
+.content {
+    padding-bottom:30px;
 }
 .box {
     margin: 5px;
@@ -127,6 +133,7 @@ h3.title {
 .price span:last-child {
     font-size: 12px;
     color:#c9c9c9;
+    padding-top:2px;
 }
 .btn-buy {
     display: block;
@@ -175,8 +182,15 @@ h3.title {
     background-color: #c0dca9;
 }
 
-
-
+/***************
+ * 导航顶部固定
+ ***************/
+.stick {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
 
 
 
