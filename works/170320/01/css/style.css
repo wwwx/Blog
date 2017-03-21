@@ -54,7 +54,9 @@ img {
     position:relative;
 }
 .navbar {
+    max-width: 640px;
     height: 38px;
+    margin: 0 auto;
     background: #00bd2c;
     white-space: nowrap;
     overflow-y: scroll; 
