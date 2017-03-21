@@ -1,10 +1,10 @@
 /*@charset utf-8;*/
 * { margin: 0; padding: 0; }
 html {
-    height: 100%;
+    min-height: 100%;
 }
 body {
-    height: 100%; 
+    min-height: 100%; 
     line-height: 1;
     color: #333;
     font-size: 14px;
@@ -72,9 +72,9 @@ img {
     background-color: #f99200; 
 }
 .box {
-    margin: 6px;
+    margin: 5px;
     margin-bottom: 15px;
-    padding: 6px;
+    padding: 5px;
     background-color: #00bd59;
     border-radius: 6px;
 }
@@ -90,10 +90,10 @@ h3.title {
 }
 .ul-stlye li {
     float: left;
-    width: 49%;
+    width: 49.5%;
     padding:6px;
-    margin-bottom: 9px;
-    margin-right: 2%;
+    margin-bottom: 5px;
+    margin-right: 1%;
     background-color: #fff;
     border-radius: 6px;
     -webkit-box-sizing: border-box;
@@ -109,13 +109,13 @@ h3.title {
     min-height: 162px;
     height: auto;
 }
-.ul-stlye li p i {
-    font-style: normal;
-}
 .ul-stlye li p {
     font-size:14px;
     line-height:1.2em;
     margin:5px 0;
+}
+.ul-stlye li p i {
+    font-style: normal;
 }
 .price span:first-child {
     color:#f95800;
