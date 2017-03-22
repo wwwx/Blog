@@ -66,19 +66,16 @@ img {
     display: inline-block;
     height: 38px;
     line-height: 38px;
-}
-.navbar li a {
-    display: block;
     padding:0 10px;
     color: #fff;
     font-size: 18px;
     font-weight: 900;
 }
-.navbar li.active a {
+.navbar li.active {
     background-color: #f99200; 
 }
 .content {
-    padding-bottom:30px;
+    padding-bottom:20px;
 }
 .box {
     margin: 5px;
@@ -222,6 +219,13 @@ h3.title {
     top: 0;
     right: 0;
     left: 0;
+}
+
+/**************
+ * 返回顶部按钮
+ ***************/
+.fixed_btn {
+    z-index: 9;
 }
 
 

@@ -40,7 +40,7 @@ $(function(){
             }
 
             this.stick();
-            this.nav();
+            this.navScrollTo();
         },
         getList: function(key){
             var url = "//search.ule.com/api/recommend?jsoncallback=?&restype=2001";
@@ -97,7 +97,7 @@ $(function(){
                 }
             })
         },
-        nav: function(){
+        navScrollTo: function(){
             navbar.find('li').click(function(){
                 var _this = $(this);
                 var box_top = box.eq(_this.index()).offset().top;
@@ -105,7 +105,7 @@ $(function(){
                 _this.addClass('active').siblings().removeClass('active');
                 if ($('html').scrollTop()) {  
                     $('html').animate({ scrollTop: (box_top - navbar_h) }, 500);
-                    navbar.addClass('stick');
+                    navbar.addClass('stick'); 
                     navAnchor.height(navbar.height());  
                     return false;  
                 } 
@@ -117,15 +117,19 @@ $(function(){
                 }    
             })
         },
-        tab: function(h){
+        selectNav: function(h){
             for (var i=0, len=navbar.find('li').length; i<len; i++) {
+                var navLi = navbar.find('li');
                 var box_top = box.eq(i).offset().top;
-                var navbar_h = navbar.height();
-                if (h > (box_top - navbar_h - 40)) {
-                    navbar.find('li').eq(i).addClass('active').siblings().removeClass('active');
+                if (h > (box_top + win.height()/2) {
+                    this.tab(navLi.eq(i));
+                } else {
+                    this.tab(navLi.eq(i-1));
                 }
-            }
-            
+            }            
+        },
+        tab: function(obj){
+            obj.addClass('active').siblings().removeClass('active');
         }
     }
 
