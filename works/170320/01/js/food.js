@@ -2,16 +2,19 @@
 
 $(function(){
 
+// 全局调用方法methods
     var m = {
+        // 格式化字符串
         sprintf: function(){
             var str = arguments[0] || '';
-            for (var i = 1, n = arguments.length; i < n; i++) {
+            for (var i=1, n=arguments.length; i<n; i++) {
                 str = str.replace(/%s/, arguments[i].toString());
             }
             return str;
         }
     }
 
+// 
     var item = '<li><a href="%s">\
                     <div class="pic"><img src="%s" /><span>322*322</span></div>\
                     <p class="desc">%s</p>\
@@ -28,7 +31,6 @@ $(function(){
         box = $('.box');
 
 
-
 // 
     var food = {
         init: function(){
@@ -38,7 +40,7 @@ $(function(){
             }
 
             this.stick();
-            this.nav();
+            this.navScrollTo();
         },
         getList: function(key){
             var url = "//search.ule.com/api/recommend?jsoncallback=?&restype=2001";
@@ -50,20 +52,15 @@ $(function(){
                 data: data,
                 dataType: 'jsonp',
                 success: function(res) {
-                    console.log(res)
                     for (var i=0, len=res[key].length;  i<len; i++) {
-                        var arr = [];
-                        var _html = '';
+                        var _item = '';
                         var data = res[key];
-                        var container = key.slice(11);console.log(container)
-                        arr.push('<ul class="ul-stlye clearfix">');
+                        var container = key.slice(11);
                         for (var i=0, len = data.length; i<len; i++) {
-                            _html += m.sprintf(item, data[i].listingUrl, data[i].imgUrl, data[i].listingName, data[i].minPrice, data[i].maxPrice)
+                            _item += m.sprintf(item, data[i].listingUrl, data[i].imgUrl, data[i].listingName, data[i].minPrice, data[i].maxPrice)
                         }
-                        arr.push(_html);
-                        arr.push('</ul></div>');
                     }
-                    $('#'+container).append(arr.join(""));
+                    $('#'+container).append('<ul class="ul-stlye clearfix">'+ _item +'</ul></div>');
                 },
                 error: function(error){
                     console.log(error)
@@ -84,7 +81,7 @@ $(function(){
                     navbar.removeClass('stick');
                     navAnchor.height(0);
                 }
-                that.tab(win_top);
+                that.selectNav(win_top);
             });
             win.scroll(function(event) {
                 var win_top = win.scrollTop();
@@ -97,9 +94,10 @@ $(function(){
                     navbar.removeClass('stick');
                     navAnchor.height(0);
                 }
+                that.selectNav(win_top);
             })
         },
-        nav: function(){
+        navScrollTo: function(){
             navbar.find('li').click(function(){
                 var _this = $(this);
                 var box_top = box.eq(_this.index()).offset().top;
@@ -107,7 +105,7 @@ $(function(){
                 _this.addClass('active').siblings().removeClass('active');
                 if ($('html').scrollTop()) {  
                     $('html').animate({ scrollTop: (box_top - navbar_h) }, 500);
-                    navbar.addClass('stick');
+                    navbar.addClass('stick'); 
                     navAnchor.height(navbar.height());  
                     return false;  
                 } 
@@ -119,17 +117,22 @@ $(function(){
                 }    
             })
         },
-        tab: function(h){
+        selectNav: function(h){
             for (var i=0, len=navbar.find('li').length; i<len; i++) {
+                var navLi = navbar.find('li');
                 var box_top = box.eq(i).offset().top;
-                var navbar_h = navbar.height();
-                if (h > (box_top - navbar_h - 40)) {
-                    navbar.find('li').eq(i).addClass('active').siblings().removeClass('active');
+                if (h > (box_top - win.height()/2) {
+                    this.tab(navLi.eq(i));
+                } else {
+                    this.tab(navLi.eq(i-1));
                 }
-            }
-            
+            }            
+        },
+        tab: function(obj){
+            obj.addClass('active').siblings().removeClass('active');
         }
     }
+
     food.init();
 
 })

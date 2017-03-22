@@ -4,9 +4,13 @@ html {
     min-height: 100%;
 }
 body {
+    position: relative;
+    max-width: 640px;
     min-height: 100%; 
-    line-height: 1;
+    line-height: 1.2;
+    margin: 0 auto;
     color: #333;
+    background-color: #ffebc0;
     font-size: 14px;
     font-family: -apple-system, BlinkMacSystemFont,
                 "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
@@ -47,8 +51,6 @@ img {
     position: relative;
     max-width: 640px;
     height:auto;
-    margin: 0 auto;
-    background-color: #ffebc0;
 }
 .nav {
     position:relative;
@@ -97,7 +99,7 @@ h3.title {
 .ul-stlye li {
     float: left;
     width: 49.5%;
-    padding: 6px;
+    padding: 8px;
     margin-bottom: 5px;
     margin-right: 1%;
     background-color: #fff;
@@ -119,8 +121,8 @@ h3.title {
     line-height: 1.2em;
     margin: 5px 0;
 }
-.ul-stlye li p i {
-    font-style: normal;
+.ul-stlye li p:last-child {
+    margin-bottom: 0;
 }
 .pic {
     position: relative;
