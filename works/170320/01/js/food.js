@@ -121,7 +121,7 @@ $(function(){
             for (var i=0, len=navbar.find('li').length; i<len; i++) {
                 var navLi = navbar.find('li');
                 var box_top = box.eq(i).offset().top;
-                if (h > (box_top - win.height()/2) {
+                if (h > (box_top - win.height()/2)) {
                     this.tab(navLi.eq(i));
                 } else {
                     this.tab(navLi.eq(i-1));
