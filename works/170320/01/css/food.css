@@ -62,7 +62,7 @@ img {
     margin: 0 auto;
     background: #00bd2c;
     white-space: nowrap;
-    overflow-y: scroll; 
+    /*overflow-y: scroll; */
 }
 .navbar li {
     display: inline-block;
