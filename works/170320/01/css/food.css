@@ -54,24 +54,26 @@ img {
 }
 .nav {
     position:relative;
+    max-width: 640px;
+    margin: 0 auto;
     z-index: 10;
 }
 .navbar {
-    max-width: 640px;
-    height: 38px;
-    margin: 0 auto;
+    width:640px;
+    height: 40px;
     background: #00bd2c;
     white-space: nowrap;
-    /*overflow-y: scroll; */
+    /*overflow-y: scroll;*/
 }
 .navbar li {
     display: inline-block;
-    height: 38px;
-    line-height: 38px;
-    padding:0 10px;
+    /*width:120px;*/
+    height: 40px;
+    line-height: 40px;
+    margin:0 10px;
     color: #fff;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 700;
 }
 .navbar li.active {
     background-color: #f99200; 
