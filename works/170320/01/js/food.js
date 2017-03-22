@@ -103,17 +103,14 @@ $(function(){
                 var navbar_h = navbar.height();
                 _this.addClass('active').siblings().removeClass('active');
                 if ($('html').scrollTop()) {  
-                    $('html').animate({ scrollTop: (box_top - navbar_h) }, 500);
-                    navbar.addClass('stick'); 
-                    navAnchor.height(navbar.height());  
-                    return false;  
+                    $('html').scrollTop(box_top - navbar_h); 
                 } 
                 else {
-                    $('body').animate({ scrollTop: (box_top - navbar_h) }, 500); 
-                    navbar.addClass('stick');
-                    navAnchor.height(navbar.height()); 
-                    return false;  
+                    $('body').scrollTop(box_top - navbar_h);
                 }    
+                navbar.addClass('stick');
+                navAnchor.height(navbar.height()); 
+                return false;  
             });
             win.scroll(function(){
                 var win_top = win.scrollTop();
