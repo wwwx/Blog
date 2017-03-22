@@ -40,7 +40,8 @@ $(function(){
             }
 
             this.stick();
-            this.navScrollTo();
+            this.nav(); 
+            this.navScroll();
         },
         getList: function(key){
             var url = "//search.ule.com/api/recommend?jsoncallback=?&restype=2001";
@@ -68,7 +69,6 @@ $(function(){
             })
         },
         stick: function(){
-            var that = this;
             // navbar 滚动到顶部固定
             document.addEventListener('touchmove', function(event) {
                 var win_top = win.scrollTop();
@@ -81,7 +81,6 @@ $(function(){
                     navbar.removeClass('stick');
                     navAnchor.height(0);
                 }
-                that.selectNav(win_top);
             });
             win.scroll(function(event) {
                 var win_top = win.scrollTop();
@@ -94,10 +93,10 @@ $(function(){
                     navbar.removeClass('stick');
                     navAnchor.height(0);
                 }
-                that.selectNav(win_top);
             })
         },
-        navScrollTo: function(){
+        nav: function(){
+            var that = this;
             navbar.find('li').click(function(){
                 var _this = $(this);
                 var box_top = box.eq(_this.index()).offset().top;
@@ -115,7 +114,20 @@ $(function(){
                     navAnchor.height(navbar.height()); 
                     return false;  
                 }    
+            });
+            win.scroll(function(){
+                var win_top = win.scrollTop();
+                that.selectNav(win_top);
             })
+        },
+        navScroll:function(){
+            var myscroll;
+            function loaded(){
+                setTimeout(function(){
+                    myScroll = new IScroll('#navbar', { scrollX: true, scrollY: true, mouseWheel: true, click: true });
+                },100 );
+            }
+            window.addEventListener("load",loaded,false);
         },
         selectNav: function(winTop){
             var winH = win.height();
