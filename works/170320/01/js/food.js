@@ -2,19 +2,16 @@
 
 $(function(){
 
-// 全局调用方法methods
     var m = {
-        // 格式化字符串
         sprintf: function(){
             var str = arguments[0] || '';
-            for (var i=1, n=arguments.length; i<n; i++) {
+            for (var i = 1, n = arguments.length; i < n; i++) {
                 str = str.replace(/%s/, arguments[i].toString());
             }
             return str;
         }
     }
 
-// 
     var item = '<li><a href="%s">\
                     <div class="pic"><img src="%s" /><span>322*322</span></div>\
                     <p class="desc">%s</p>\
@@ -29,6 +26,7 @@ $(function(){
         navbar = $('#navbar'),
         navAnchor = $('#navAnchor'),
         box = $('.box');
+
 
 
 // 
@@ -54,14 +52,18 @@ $(function(){
                 success: function(res) {
                     console.log(res)
                     for (var i=0, len=res[key].length;  i<len; i++) {
+                        var arr = [];
                         var _html = '';
                         var data = res[key];
-                        var container = key.slice(11);
+                        var container = key.slice(11);console.log(container)
+                        arr.push('<ul class="ul-stlye clearfix">');
                         for (var i=0, len = data.length; i<len; i++) {
                             _html += m.sprintf(item, data[i].listingUrl, data[i].imgUrl, data[i].listingName, data[i].minPrice, data[i].maxPrice)
                         }
+                        arr.push(_html);
+                        arr.push('</ul></div>');
                     }
-                    $('#'+container).append('<ul class="ul-stlye clearfix">'+ _html +'</ul></div>');
+                    $('#'+container).append(arr.join(""));
                 },
                 error: function(error){
                     console.log(error)
@@ -128,7 +130,6 @@ $(function(){
             
         }
     }
-
     food.init();
 
 })
