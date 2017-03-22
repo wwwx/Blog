@@ -82,7 +82,7 @@ $(function(){
                     navbar.removeClass('stick');
                     navAnchor.height(0);
                 }
-                that.tab(win_top);
+                that.selectNav(win_top);
             });
             win.scroll(function(event) {
                 var win_top = win.scrollTop();
@@ -95,6 +95,7 @@ $(function(){
                     navbar.removeClass('stick');
                     navAnchor.height(0);
                 }
+                that.selectNav(win_top);
             })
         },
         navScrollTo: function(){
