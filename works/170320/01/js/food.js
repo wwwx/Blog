@@ -24,7 +24,7 @@ $(function(){
                 this.getList(keys[i]);
             }
 
-            this.stick();
+            this.navStick();
             this.navTap(); 
             // this.navScroll();
         }
@@ -46,16 +46,16 @@ $(function(){
                             items += that.sprintf(that.item, data[i].listingUrl, data[i].imgUrl, data[i].listingName, data[i].minPrice, data[i].maxPrice)
                         }
                     }
-                    $('#'+container).append('<ul class="ul-stlye clearfix">'+ items +'</ul></div>');
+                    $('#'+container).find('.list').append('<ul class="ul-stlye clearfix">'+ items +'</ul></div>');
                 },
                 error: function(error){
                     console.log(error)
                 }
             })
         }
-        ,stick: function(){
-            var that = this;
+        ,navStick: function(){ 
             // navbar 滚动到顶部固定
+            var that = this;
             document.addEventListener('touchmove', function(event) {
                 var win_top = $(window).scrollTop();
                 var navAnchor_top = that.navAnchor.offset().top;
