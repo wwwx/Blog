@@ -26,7 +26,7 @@ $(function(){
 
             this.stick();
             this.navTap(); 
-            this.navScroll();
+            // this.navScroll();
         }
         ,getList: function(key){
             var that = this;
@@ -103,15 +103,15 @@ $(function(){
                 that.selectNav(win_top);
             })
         }
-        ,navScroll:function(){
-            var myscroll;
-            function loaded(){
-                setTimeout(function(){
-                    myScroll = new IScroll('#navbar', { scrollX: true, scrollY: true, mouseWheel: true, click: true });
-                },100 );
-            }
-            window.addEventListener("load",loaded,false);
-        }
+        // ,navScroll:function(){
+        //     var myscroll;
+        //     function loaded(){
+        //         setTimeout(function(){
+        //             myScroll = new IScroll('#navbar', { scrollX: true, scrollY: true, mouseWheel: true, click: true });
+        //         },100 );
+        //     }
+        //     window.addEventListener("load",loaded,false);
+        // }
         ,selectNav: function(winTop){
             var winH = $(window).height();
             var navLi = this.navbar.find('li');
