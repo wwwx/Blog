@@ -122,9 +122,9 @@ $(function(){
             function loaded(){
                 setTimeout(function(){
                     myScroll = new IScroll('#navbar', { scrollX: true, scrollY: true, mouseWheel: true, click: true });
-                },100 );
+                }, 100);
             }
-            window.addEventListener("load",loaded,false);
+            window.addEventListener("load", loaded, false);
         },
         selectNav: function(winTop){
             var winH = win.height();

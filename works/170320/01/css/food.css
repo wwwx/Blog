@@ -59,15 +59,13 @@ img {
     z-index: 10;
 }
 .navbar {
-    width:640px;
     height: 40px;
     background: #00bd2c;
     white-space: nowrap;
-    /*overflow-y: scroll;*/
+    overflow-y: scroll;
 }
 .navbar li {
     display: inline-block;
-    /*width:120px;*/
     height: 40px;
     line-height: 40px;
     margin:0 10px;
