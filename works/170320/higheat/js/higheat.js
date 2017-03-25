@@ -23,7 +23,7 @@ $(function(){
 
             this.navStick();
             this.navTap(); 
-            // this.navScroll();
+            this.navScroll();
         }
         ,getList: function(key){
             var that = this;
@@ -40,7 +40,7 @@ $(function(){
                         items += that.sprintf(that.item, data[i].listingUrl, data[i].imgUrl, data[i].listingName, data[i].minPrice, data[i].maxPrice)
                     }
                 }
-                 $('#' + container + ' .list').append('<ul class="ul-style clearfix">'+ items +'</ul>');
+                 $('#'+ container +' .list').append('<ul class="ul-style clearfix">'+ items +'</ul>');
             })
         }
         ,navStick: function(){ 
@@ -93,15 +93,16 @@ $(function(){
                 that.selectNav(win_top);
             })
         }
-        // ,navScroll:function(){
-        //     var myscroll;
-        //     function loaded(){
-        //         setTimeout(function(){
-        //             myScroll = new IScroll('#navbar', { scrollX: true, scrollY: true, mouseWheel: true, click: true });
-        //         },100 );
-        //     }
-        //     window.addEventListener("load",loaded,false);
-        // }
+        ,navScroll: function(){
+            var myscroll;
+            function loaded(){ 
+                console.log('document has been load over.')
+                setTimeout(function(){
+                    myScroll = new IScroll('#navbar', { scrollX: true, scrollY: true, mouseWheel: true, click: true });
+                },100 );
+            }
+            window.addEventListener("load", loaded, false);
+        }
         ,selectNav: function(winTop){
             var winH = $(window).height();
             var navLi = this.navbar.find('li');

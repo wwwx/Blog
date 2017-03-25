@@ -62,7 +62,11 @@ img {
     margin: 0 auto;
     z-index: 10;
 }
+#navbar {
+    height:52px;
+}
 .navbar {
+    position: absolute;
     max-width: 640px;
     margin: 0 auto;
     background: #fff;

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        ul, li {
+            list-style: none;
+        }
+        div {
+            /*margin-top: 20px;*/
+            /*position:absolute;*/
+            /*top: 0;
+            left: 0;
+            right: 0;*/
+        }
+        ul {
+            position: absolute;
+            /*overflow: hidden;*/
+            white-space: nowrap;
+        }
+        li {
+            /*float: left;*/
+            display: inline-block;
+            width: 100px;
+            height:100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #f60;
+            border: 2px solid #ccc;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</div>
+
+<script src="js/iscroll.js"></script>
+<script>
+    
+    var myscroll = new IScroll('#wrapper', {scrollX: true, scrollY: true, mouseWheel: true})
+
+
+</script>
+</body>
+</html>
