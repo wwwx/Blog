@@ -64,6 +64,7 @@ img {
 }
 #navbar {
     height:52px;
+    background: rgba(255,255,255,.9);
 }
 .navbar {
     position: absolute;
