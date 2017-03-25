@@ -6,6 +6,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <meta name="author" content="wangxu wangxu@ule.com">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     <title>美食汇</title>
     <link rel="stylesheet" href="css/food.css">
 </head>
@@ -17,8 +19,8 @@
             <img src="images/banner_02.jpg" width="100%">
             <img src="images/banner_03.jpg" width="100%">
             <img src="images/banner_04.jpg" width="100%">
-        </div>
-        <div class="nav">
+        </div><!-- banner -->
+        <nav class="nav">
             <div id="navAnchor"></div>
             <div id="navbar">
                 <ul class="navbar">
@@ -29,46 +31,52 @@
                     <li data-id="goodstore">优质好店</li>
                 </ul>
             </div>
-        </div>
+        </nav><!-- nav -->
         <div class="content">
-            <div class="box" id="mysy">
+            <section class="box" id="mysy">
                 <h3 class="title">买一送一</h3>
-            </div>
-            <div class="box" id="xxls">
+                <div class="list"></div>
+            </section>
+            <section class="box" id="xxls">
                 <h3 class="title">休闲零食</h3>
-            </div>
-            <div class="box" id="sxsg">
+                <div class="list"></div>
+            </section>
+            <section class="box" id="sxsg">
                 <h3 class="title">生鲜水果</h3>
-            </div>
-            <div class="box" id="bkzq">
+                <div class="list"></div>
+            </section>
+            <section class="box" id="bkzq">
                 <h3 class="title">爆款专区</h3>
-            </div>
-            <div class="box goodstore" id="goodstore">
+                <div class="list"></div>
+            </section>
+            <section class="box goodstore" id="goodstore">
                 <h3 class="title">优质好店</h3>
-                <ul class="ul-stlye clearfix">
-                    <li><a href="###" class="eating">
-                        <div class="pic"><img src="images/friut.jpg" /><span>322*322</span></div>
-                        <div class="descr">
-                            <p class="descr-logo">&nbsp;</p>
-                            <p class="descr-tit">吃货集中营</p>
-                            <p class="descr-discount">全场满29-5</p> 
-                        </div>       
-                    </a></li>
-                    <li><a href="###" class="agricultural">
-                        <div class="pic"><img src="images/friut.jpg" /><span>322*322</span></div>
-                        <div class="descr">
-                            <p class="descr-logo">&nbsp;</p>
-                            <p class="descr-tit">中国农垦旗舰店</p>
-                            <p class="descr-discount">全场满99-10</p>
-                        </div>       
-                    </a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                <div class="list">
+                    <ul class="ul-stlye clearfix">
+                        <li><a href="###" class="eating">
+                            <div class="pic"><img src="images/friut.jpg" /><span>322*322</span></div>
+                            <div class="descr">
+                                <p class="descr-logo">&nbsp;</p>
+                                <p class="descr-tit">吃货集中营</p>
+                                <p class="descr-discount">全场满29-5</p> 
+                            </div>       
+                        </a></li>
+                        <li><a href="###" class="agricultural">
+                            <div class="pic"><img src="images/friut.jpg" /><span>322*322</span></div>
+                            <div class="descr">
+                                <p class="descr-logo">&nbsp;</p>
+                                <p class="descr-tit">中国农垦旗舰店</p>
+                                <p class="descr-discount">全场满99-10</p>
+                            </div>       
+                        </a></li>
+                    </ul>
+                </div>
+            </section>
+        </div><!-- content -->
+    </div><!-- wrapper -->
 
 <script src="js/jquery-2.0.3.min.js"></script>
-<script src="js/iScroll.js"></script>
+<!-- <script src="js/iscroll.js"></script> -->
 <script src="js/food.js"></script>
 <script src="//i0.ulecdn.com/ulewap/j/common/inner_header.js"></script>
 </body>
