@@ -6,33 +6,27 @@
 </head>
 <body>
     
-
+<form onsubmit="return false">
+    <label for="name">username</label> <input id="username" type="text" placeholder="username"><br>
+    <label for="pwd">password</label> <input id="password" type="password" placeholder="password"><br>
+    <input id="submit" type="submit" value="submit">
 
 
 <script src="../../../static/libs/jquery/jquery-2.1.1.min.js"></script>
 <script>
+$(function(){
 
-
-
-
-    $(function(){
-
-      // console.log($.browser)
-        $.browser = $.browser || {};
-        $.extend($.browser, (function(){
-            
-            var ua = navigator.userAgent.toLowerCase(), os, version;
-            console.log(ua);
-
-
-
-
-        })())
-    
-        console.log($.browser.name == 'xiaowang');
-
-
+    $('#submit').click(function() {
+        $.get('index.php', {username: $('#username').val(), password: $('#password').val()}), function(res){
+            console.log(res);
+            // if()
+            location.href = 'http://www.baidu.com';
+        }
+        // console.log('OK')
     })
+
+
+})
 </script>    
 </body>
 </html>
