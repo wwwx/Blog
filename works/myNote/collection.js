@@ -395,15 +395,15 @@ var toast = (function(){
         _timer = setTimeout(function(){
             if(!_toast) return;
             _toast.children('.toast').removeClass('toast-in');
-            _toast.hide();
-        }, 2500)
+            setTimeout(function(){
+                _toast.hide();
+            }, 500)
+        }, 2000)
     }
 }())
 
 
 
-
-console.log('ok')
 
 
 
