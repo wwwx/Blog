@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content=”yes” name=”apple-mobile-web-app-capable” />
+    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);flex(100,1);</script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_i0qiivxa5xsi3sor.css">
+    <style>
+        * { margin: 0; padding: 0; }
+        body { font-size: .24rem; background: #fff;}
+        ul, ol, li { list-style: none; }
+        .footer { position: fixed; right:0; bottom: 0; left:0; height: .92rem; width: 100%; background: #fff; border-top: 1px solid #ccc; }
+        .footer ul { display: flex; height: 100%; }
+        .footer ul li { flex: 1 1 auto; text-align: center;}
+        .footer ul li > i { display: block; margin-top: .04rem; height: .48rem; line-height: .48rem; font-size: .48rem; color: gray;}
+        .footer .item.current { color: green; }
+        .footer .item.current > i { color: green; }
+        .box { width: 1rem; height: 1rem; border: 1px solid #000; margin: 20px; font-size: .12rem;} 
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p>hello again;</p>
+        <div class="box">
+            Chinese All over the world; I am prond of China.
+        </div>
+        <div class="footer">
+            <ul>
+                <li class="item bat current"><i class="iconfont icon-bat"></i>bat</li>
+                <li class="item tiger"><i class="iconfont icon-tiger"></i>tiger</li>
+                <li class="item swan"><i class="iconfont icon-swan"></i>swan</li>
+                <li class="item panda"><i class="iconfont icon-panda"></i>panda</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function hasClass(obj, cls) {  
+            return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));  
+        }  
+          
+        function addClass(obj, cls) {  
+            if (!this.hasClass(obj, cls)) obj.className += " " + cls;  
+        }  
+          
+        function removeClass(obj, cls) {  
+            if (hasClass(obj, cls)) {  
+                var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');  
+                obj.className = obj.className.replace(reg, ' ');  
+            }  
+        }  
+          
+        function toggleClass(obj,cls){  
+            if(hasClass(obj,cls)){  
+                removeClass(obj, cls);  
+            }else{  
+                addClass(obj, cls);  
+            }  
+        }  
+        window.onload = function() {
+            var footerItem = document.getElementsByClassName('item');
+            for (var i=0, len=footerItem.length; i<len; i++) {
+                footerItem[i].onclick = (function(n) {
+                    return function() {
+                        for (var j=0; j<len; j++) {
+                            if (j == n) { 
+                                addClass(footerItem[j], 'current');
+                            } else {
+                                removeClass(footerItem[j], 'current');
+                            }
+                        }
+                    }
+                })(i)
+            }
+        }        
+    </script>
+</body>
+</html>
