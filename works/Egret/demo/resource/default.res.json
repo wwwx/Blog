@@ -1,0 +1,59 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,9414_wav",
+			"name": "preload"
+		},
+		{
+			"keys": "scooter_girl_01,scooter_girl_02,scooter_girl_03,scooter_girl_04,bonus.wav",
+			"name": "scooter"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/th.jpg",
+			"type": "image",
+			"name": "scooter_girl_01"
+		},
+		{
+			"url": "assets/ti.jpg",
+			"type": "image",
+			"name": "scooter_girl_02"
+		},
+		{
+			"url": "assets/tj.jpg",
+			"type": "image",
+			"name": "scooter_girl_03"
+		},
+		{
+			"url": "assets/tk.jpg",
+			"type": "image",
+			"name": "scooter_girl_04"
+		},
+		{
+			"url": "assets/9414.wav",
+			"type": "sound",
+			"name": "bonus.wav"
+		},
+		{
+			"name": "9414_wav",
+			"type": "sound",
+			"url": "assets/9414.wav"
+		}
+	]
+}
