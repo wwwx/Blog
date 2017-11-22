@@ -1,0 +1,38 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json",
+			"name": "preload"
+		},
+		{
+			"keys": "tile_bg,green_boy,finish,object_01,object_02,object_03,object_04,tapToJump,tapToStart",
+			"name": "main"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{"name":"finish","type":"image","url":"assets/main/finish.png"},
+		{"name":"green_boy","type":"image","url":"assets/main/green_boy.png"},
+		{"name":"tile_bg","type":"image","url":"assets/main/tile_bg.png"},
+		{"name":"object_01","type":"image","url":"assets/main/object_01.png"},
+		{"name":"object_02","type":"image","url":"assets/main/object_02.png"},
+		{"name":"object_03","type":"image","url":"assets/main/object_03.png"},
+		{"name": "object_04", "type": "image","url": "assets/main/object_04.png"},
+		{"name":"tapToJump","type":"image","url":"assets/main/tapToJump.png"},
+		{"name":"tapToStart","type":"image","url":"assets/main/tapToStart.png"}
+	]
+}
