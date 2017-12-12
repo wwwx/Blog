@@ -1,2 +1,0 @@
-# sgone
-web App study
