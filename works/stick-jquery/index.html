@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="navbar-wrapper">
+    <ul class="clearfix">
+      <li class="li active"><a href="#home-01">HOME 01</a></li>
+      <li class="li"><a href="#home-02">HOME 02</a></li>
+      <li class="li"><a href="#home-03">HOME 03</a></li>
+      <li class="li"><a href="#home-04">HOME 04</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div id="home-01">01</div>
+    <div id="home-02">02</div>
+    <div id="home-03">03</div>
+    <div id="home-04">04</div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/stickUp.js"></script>
+
+  <script>
+    
+  jQuery(function($){
+
+    $(document).ready(function(){
+           $('.navbar-wrapper').stickUp({
+                                parts: {
+                                  0: 'home-01',
+                                  1: 'home-02',
+                                  2: 'home-03',
+                                  3: 'home-04'
+                                },
+                                itemClass: 'li',
+                                itemHover: 'active',
+                                topMargin: '40px'
+                              });   
+    })
+
+
+  });
+
+
+  </script>
+</body>
+</html>

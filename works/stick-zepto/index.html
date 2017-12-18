@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="nav-main" class="navbar-wrapper">
+    <div id="navbar-anchor"></div>
+    <ul class="navbar-ul" class="clearfix">
+      <li class="li active"><a href="javascript:;">HOME 01</a></li>
+      <li class="li"><a href="javascript:;">HOME 02</a></li>
+      <li class="li"><a href="javascript:;">HOME 03</a></li>
+      <li class="li"><a href="javascript:;">HOME 04</a></li>
+    </ul>
+  </div>
+
+  <!-- NAV START -->
+  <nav class="nav-wrapper"></nav>
+  <!-- / NAV END -->
+
+  <div class="content">
+    <div id="home-01">01</div>
+    <div id="home-02">02</div>
+    <div id="home-03">03</div>
+    <div id="home-04">04</div>
+  </div>
+
+  <script src="js/zepto.min.js"></script>
+  <script src="js/stickUp.js"></script>
+
+  <script>
+    $('.navbar-wrapper').stickUp({
+      navLists: ['HOME 01','HOME 02','HOME 03','HOME 04' ],
+      contents: ''
+    });
+  </script>
+</body>
+</html>
