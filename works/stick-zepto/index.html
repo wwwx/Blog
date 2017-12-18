@@ -35,10 +35,12 @@
   <script src="js/stickUp.js"></script>
 
   <script>
-    $('.navbar-wrapper').stickUp({
-      navLists: ['HOME 01','HOME 02','HOME 03','HOME 04' ],
-      contents: ''
-    });
+    Zepto(function($){
+      $('.navbar-wrapper').stickUp({
+        navLists: ['HOME 01','HOME 02','HOME 03','HOME 04' ],
+        contents: ''
+      });
+    })
   </script>
 </body>
 </html>
