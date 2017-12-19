@@ -22,19 +22,29 @@ a {
 .nav-container {
 	position: relative;
 	z-index: 10;
-	background: yellow;
 }
-.nav-container > div > ul > li {
-	padding: 12px;
+#navBar {
+	max-width: 640px;
+	background: yellow;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+#navBar > ul {
+	/*width: 716px;*/
+}
+#navBar > ul > li {
+	/*width: 90px;*/
+	padding: 12px 6px;
 	float: left;
 	color:#333;
+	text-align: center;
 }
-.nav-container > div > ul > li.active {
+#navBar > ul > li.active {
 	background: blue;
 	color: white;
 }
 .shop-container > div[id^=home] {
-	height: 800px;
+	height: 1800px;
 	border: 1px solid #f60;
 	margin-top: 20px;
 	text-align: center;
@@ -45,6 +55,11 @@ a {
 	top: 0;
 	right: 0;
 	left: 0;
+}
+.banner {
+	height: 198px;
+	background: #dcb;
+	margin-bottom: 12px;
 }
 
 
