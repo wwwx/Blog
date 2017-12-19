@@ -3,42 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
-
+  
+  <!-- STYLESHEET START -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- / STYLESHEET END -->
 
   <title>Document</title>
 </head>
 <body>
   
-  <div id="nav-main" class="navbar-wrapper">
-    <div id="navbar-anchor"></div>
-    <ul class="navbar-ul" class="clearfix">
-      <li class="li active"><a href="javascript:;">HOME 01</a></li>
-      <li class="li"><a href="javascript:;">HOME 02</a></li>
-      <li class="li"><a href="javascript:;">HOME 03</a></li>
-      <li class="li"><a href="javascript:;">HOME 04</a></li>
-    </ul>
-  </div>
+  <div class="loading"></div>
 
   <!-- NAV START -->
-  <nav class="nav-wrapper"></nav>
+  <nav class="nav-container"></nav>
   <!-- / NAV END -->
+  
+  <!-- CONTENT START -->
+  <div class="shop-container"></div>
+  <!-- / CONTENT END -->
 
-  <div class="content">
-    <div id="home-01">01</div>
-    <div id="home-02">02</div>
-    <div id="home-03">03</div>
-    <div id="home-04">04</div>
-  </div>
 
   <script src="js/zepto.min.js"></script>
   <script src="js/stickUp.js"></script>
 
   <script>
     Zepto(function($){
-      $('.navbar-wrapper').stickUp({
-        navLists: ['HOME 01','HOME 02','HOME 03','HOME 04' ],
-        contents: ''
+      $('.nav-container').stickUp({
+        navList: [
+          {
+            dataId: 'home-01',
+            text: 'Home 01'
+          },
+          {
+            dataId: 'home-02',
+            text: 'Home 02'
+          },
+          {
+            dataId: 'home-03',
+            text: 'Home 03'
+          },
+          {
+            dataId: 'home-04',
+            text: 'Home 04'
+          }
+        ],
+        // navItemClass: 'm-item', 
+        // navItemHover: 'active',
+        containerClass: 'shop-container',
+        // topMargin: 60
       });
     })
   </script>

@@ -9,6 +9,7 @@ ul, ol , li {
 
 a {
 	text-decoration: none;
+	color: #333;
 }
 .clearfix:before,
 .clearfix:after {
@@ -18,26 +19,32 @@ a {
 	overflow: hidden;
 	clear: both;
 }
-.navbar-wrapper {
+.nav-container {
 	position: relative;
 	z-index: 10;
 	background: yellow;
 }
-.navbar-wrapper > ul > li {
+.nav-container > div > ul > li {
 	padding: 12px;
 	float: left;
 	color:#333;
 }
-.navbar-wrapper > ul > li.active {
+.nav-container > div > ul > li.active {
 	background: blue;
 	color: white;
 }
-.content > div[id^=home] {
+.shop-container > div[id^=home] {
 	height: 800px;
 	border: 1px solid #f60;
 	margin-top: 20px;
 	text-align: center;
 	font-size: 100px
+}
+.stick {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 }
 
 
