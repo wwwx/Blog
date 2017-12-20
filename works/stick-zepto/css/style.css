@@ -19,21 +19,13 @@ a {
 	overflow: hidden;
 	clear: both;
 }
-.nav-container {
-	position: relative;
-	z-index: 10;
-}
 #navBar {
 	max-width: 640px;
 	background: yellow;
 	white-space: nowrap;
 	overflow-x: auto;
 }
-#navBar > ul {
-	/*width: 716px;*/
-}
 #navBar > ul > li {
-	/*width: 90px;*/
 	float: left;
 	color:#333;
 	text-align: center;
@@ -46,25 +38,23 @@ a {
 	background: blue;
 	color: white;
 }
-.shop-container > div[id^=home] {
+.nav {
+	position: relative;
+	z-index: 10;
+}
+
+.banner {
+	height: 198px;
+	background: #dcb;
+	margin-bottom: 12px;
+}
+.modules > div[id^=module] {
 	height: 1800px;
 	border: 1px solid #f60;
 	margin-top: 20px;
 	text-align: center;
 	font-size: 100px
 }
-.stick {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-}
-.banner {
-	height: 198px;
-	background: #dcb;
-	margin-bottom: 12px;
-}
-
 
 
 

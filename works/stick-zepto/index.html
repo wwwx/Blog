@@ -19,12 +19,12 @@
   <!-- /BANNER END -->
 
   <!-- NAV START -->
-  <nav class="nav-container"></nav>
+  <nav class="nav"></nav>
   <!-- / NAV END -->
   
-  <!-- CONTENT START -->
-  <div class="shop-container"></div>
-  <!-- / CONTENT END -->
+  <!-- MODULE START -->
+  <div class="modules"></div>
+  <!-- / MODULE END -->
 
 
   <script src="js/zepto.min.js"></script>
@@ -32,41 +32,40 @@
 
   <script>
     Zepto(function($){
-      $('.nav-container').stickUp({
-        navList: [
+      var listArr = [
           {
-            dataId: 'home-01',
+            dataId: 'module-01',
             text: 'Home 01'
           },
           {
-            dataId: 'home-02',
+            dataId: 'module-02',
             text: 'Home 02'
           },
           {
-            dataId: 'home-03',
+            dataId: 'module-03',
             text: 'Home 03'
           },
           {
-            dataId: 'home-04',
+            dataId: 'module-04',
             text: 'Home 04'
           },
           {
-            dataId: 'home-05',
+            dataId: 'module-05',
             text: 'Home 05'
           },
           {
-            dataId: 'home-06',
+            dataId: 'module-06',
             text: 'Home 06'
           },
           {
-            dataId: 'home-07',
+            dataId: 'module-07',
             text: 'Home 07'
           }
-        ],
-        // navItemClass: 'm-item', 
-        // navItemHover: 'active',
-        containerClass: 'shop-container',
-        // topMargin: 60
+        ];
+
+      $('.nav').stickUp({
+        navList: listArr,
+        container: 'modules'
       });
     })
   </script>
