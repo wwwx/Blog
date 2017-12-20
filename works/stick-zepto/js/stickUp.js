@@ -16,7 +16,7 @@
 	});
 
 	// 扩展滚动条的滑动效果
-    $.fn.scrollToo =function(options){
+    $.fn.scrollTo =function(options){
         var defaults = {
         	direction: 'top', // 滚动方向 默认水平方向
         	position : 0,    // 滚动目标位置
@@ -149,13 +149,13 @@
 				$('.' + navItemClass).bind('touchstart, click', function(){
 					var index = $(this).index();
 					var moduleTop1 = $('#' + module[index]).offset().top;
-					$('body').scrollToo({
+					$('body').scrollTo({
 						direction: 'top',
 						position: moduleTop1 - topMargin
 					});
 
 					if (index > 1) {
-						$('#navBar').scrollToo({
+						$('#navBar').scrollTo({
 							direction: 'left',
 							position: (index-1) * navItemWidth
 						});
