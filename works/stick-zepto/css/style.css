@@ -34,12 +34,15 @@ a {
 }
 #navBar > ul > li {
 	/*width: 90px;*/
-	padding: 12px 6px;
 	float: left;
 	color:#333;
 	text-align: center;
 }
-#navBar > ul > li.active {
+#navBar > ul > li > a {
+	display: block;
+	padding: 12px 6px;
+}
+#navBar > ul > li.active a {
 	background: blue;
 	color: white;
 }

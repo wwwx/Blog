@@ -15,10 +15,11 @@
 	    }
 	});
 
-	// 滑动效果
-	$.fn.scrollTo =function(options){
+	// 扩展滚动条的滑动效果
+    $.fn.scrollToo =function(options){
         var defaults = {
-            toT : 0,    //滚动目标位置
+        	direction: 'top', // 滚动方向 默认水平方向
+        	position : 0,    // 滚动目标位置
             durTime : 200,  //过渡动画时间
             delay : 30,     //定时器时间
             callback:null   //回调函数
@@ -26,26 +27,34 @@
         var opts = $.extend(defaults,options),
             timer = null,
             _this = this,
-            curTop = _this.scrollTop(),//滚动条当前的位置
-            subTop = opts.toT - curTop,    //滚动条目标位置和当前位置的差值
+            curPos = opts.direction === 'top' ? _this.scrollTop() : _this.scrollLeft(),
+            diff =  opts.position - curPos,    
             index = 0,
             dur = Math.round(opts.durTime / opts.delay),
             smoothScroll = function(t){
                 index++;
-                var per = Math.round(subTop/dur);
+                var per = Math.round(diff/dur);
                 if(index >= dur){
-                    _this.scrollTop(t);
+                	if (opts.direction === 'top') {
+                    	_this.scrollTop(t);
+                	} else {
+                		_this.scrollLeft(t);
+                	}
                     window.clearInterval(timer);
                     if(opts.callback && typeof opts.callback == 'function'){
                         opts.callback();
                     }
                     return;
                 }else{
-                    _this.scrollTop(curTop + index*per);
+                	if (opts.direction === 'top') {
+                    	_this.scrollTop(curPos + index*per);
+                	} else {
+                    	_this.scrollLeft(curPos + index*per);
+                	}
                 }
             };
         timer = window.setInterval(function(){
-            smoothScroll(opts.toT);
+            smoothScroll(opts.position);
         }, opts.delay);
         return _this;
     };
@@ -131,38 +140,31 @@
 
 				$('#navBar ul').css({
 					'width': navItemWidth * navItemSize + 1,
-					'transition-property': '-webkit-transform', 
-					'transition-duration': '600ms',
-					'transition-timing-function': 'cubic-bezier(0.1, 0.57, 0.1, 1)', 
-					'transform': 'translate(0px, 0px) translateZ(0px)'
+					// 'transition-property': '-webkit-transform', 
+					// 'transition-duration': '600ms',
+					// 'transition-timing-function': 'cubic-bezier(0.1, 0.57, 0.1, 1)', 
+					// 'transform': 'translate(0px, 0px) translateZ(0px)'
 				});
 				// 导航绑定点击事件
 				$('.' + navItemClass).bind('touchstart, click', function(){
 					var index = $(this).index();
 					var moduleTop1 = $('#' + module[index]).offset().top;
-					$('body').scrollTo({
-						toT: moduleTop1 - topMargin
+					$('body').scrollToo({
+						direction: 'top',
+						position: moduleTop1 - topMargin
 					});
 
-					// var navItemOffsetX = $(this).offset().left;
-					var l = $('#navBar ul li').width();
-					var c = document.getElementById('navBar').getElementsByTagName('ul')[0].getBoundingClientRect();
-					var x = c.left - l;
-					// if (index >=2 && index <= (navItemSize-2)) {
-					// 	$('#navBar ul').css({
-					// 		'transform': 'translate('+ x +'px)'
-					// 	});
-					// }
+					if (index > 1) {
+						$('#navBar').scrollToo({
+							direction: 'left',
+							position: (index-1) * navItemWidth
+						});
+					}
 				});
 			}
 
 			vartop = $(this).offset().top; 
 		}
-
-		$(document).on('touchmove', '#navBar', function(evt){
-			evt = evt || window.event;
-			console.log(evt.touches[0].pageX)
-		});
 
 
 
