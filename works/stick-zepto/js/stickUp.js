@@ -94,16 +94,10 @@
 		var windowWidth = $(window).width();
 
 		$.fn.stickUp = function(options) {
-			// $(this).css({
-			// 	'position': 'relative',
-			// 	'z-index': '10'
-			// });
-			// $(tpl.html_module_wrap).find('#navBar').css({
-			// 	'max-width': '640px',
-			// 	'background': 'yellow',
-			// 	'white-space': 'nowrap',
-			// 	'overflow-x': 'auto'
-			// });
+			$(this).css({
+				'position': 'relative',
+				'z-index': '10'
+			})
 
 
 			if (options) {

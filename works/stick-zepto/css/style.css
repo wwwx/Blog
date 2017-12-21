@@ -38,10 +38,6 @@ a {
 	background: blue;
 	color: white;
 }
-.nav {
-	position: relative;
-	z-index: 10;
-}
 
 .banner {
 	height: 198px;
