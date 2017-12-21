@@ -102,12 +102,12 @@
 
 			if (options) {
 				opts = $.extend({
-					navList: [],
-					navItemClass: navItemClass,
-					navItemHover: navItemHover,
-					tpl: tpl
+					navList: [], // 导航内容列表
+					navItemClass: navItemClass, // 导航按钮class
+					navItemHover: navItemHover, // 导航按钮选中class
+					tpl: tpl // 导航html模板
 				}, options);
-				// console.log(opts.topMargin)
+
 				navItemClass = opts.navItemClass;
 				navItemHover = opts.navItemHover;
 				navItemSize  = opts.navList.length;
@@ -121,16 +121,11 @@
 				// 组装导航, 各模块
 				$(this).html(opts.tpl.html_nav_wrap).find('ul').html(navItems).find('li').eq(0).addClass(opts.navItemHover);
 				$('.' + options.container).html(moduleItems);
-				
-				// $('.' + opts.navItemClass).css({
-				// 	'float': 'left',
-				// 	'color': '#333',
-				// 	'text-align': 'center'
-				// })
+			
 
 				// 获取导航条的高度 和 每个按钮的宽度
 				navHeight = $('#navBar ul li').height(); 
-				navItemWidth = $('#navBar ul li').width();
+				navItemWidth = $('#navBar ul li').eq(0).width();
 
 				// 矫正topMargin为数字，number类型
 				if (opts.topMargin) {
@@ -184,16 +179,15 @@
 		}
 
 
-
-		// 滚动时导航对应按钮选中
+		// 滚动时导航对应按钮选中		
+		var hover = function(index) {
+			$('.' + navItemClass).removeClass(navItemHover);
+			$('.' + navItemClass).eq(index).addClass(navItemHover);
+			$('#navBar').scrollLeft((index-1) * navItemWidth)
+		};
 		$(window).on('scroll', function(){
 			varscroll = $(window).scrollTop();
 			if (navItemSize > 0) {
-				var hover = function(index) {
-					$('.' + navItemClass).removeClass(navItemHover);
-					$('.' + navItemClass).eq(index).addClass(navItemHover);
-					$('#navBar').scrollLeft((index-1) * navItemWidth)
-				}
 				for (var i=0; i< navItemSize; i++) {
 					moduleTop[i] = $('#' + module[i]).offset().top;
 					moduleUpScroll = moduleTop[i] - windowHeight*.3;
