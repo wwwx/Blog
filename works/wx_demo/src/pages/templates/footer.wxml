@@ -1,0 +1,2 @@
+<template name="footer1">this is footer first one</template>
+<template name="footer2">{{ footerText }}</template>

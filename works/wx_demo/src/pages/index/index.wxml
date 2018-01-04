@@ -1,0 +1,14 @@
+
+<include src="../templates/header" />
+
+<view class="container">
+  <map></map>
+  <button bindtap="btnClick">btnClick</button>
+  <text wx:if="{{ show }}">{{ text }}</text>
+  <text wx:else>Hello world;</text>
+</view>
+
+<view wx:for="{{ news }}" wx:for-item="it">{{ index+1 }} - {{ it }}</view>
+
+<import src="../templates/footer"/>
+<template is="footer2" data="{{ footerText }}"/>
