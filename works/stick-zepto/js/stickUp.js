@@ -97,7 +97,7 @@
 			$(this).css({
 				'position': 'relative',
 				'z-index': '10'
-			})
+			});
 
 
 			if (options) {
@@ -176,7 +176,7 @@
 
 			vartop = $(this).offset().top; 
 			return this;
-		}
+		};
 
 
 		// 滚动时导航对应按钮选中		

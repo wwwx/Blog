@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <input placeholder="请输入运单号" focus="{{focus}}" />
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> primary </button>
+</view>
+
+
