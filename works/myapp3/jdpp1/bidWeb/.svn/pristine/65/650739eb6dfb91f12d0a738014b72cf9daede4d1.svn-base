@@ -1,0 +1,416 @@
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="root61">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="易趣 易趣竞价">
+    <meta name="description" content="易趣 易趣竞价">
+    <title>易趣 易趣竞价</title>
+    <link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/saved_resource.css" />
+    <link source="widget" type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/saved_resource1.css" />
+    <link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/saved_resource2.css" source="widget" />
+    <link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/vi.min.css" source="widget" />
+    <link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/header.css" />
+    <link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/dialog.css" />
+    <script src="//i1.beta.ulecdn.com/j/lib/jquery.js"></script>
+    <script src="//i1.beta.ulecdn.com/j/jend/jend.js"></script>
+    <script src="//i0.beta.ulecdn.com/eachnet/js/header.js"></script>
+</head>
+
+<body>
+<div id="content">
+    <div class="w">
+        <div class="crumbs">
+            <a href="//bid.beta.eachnet.com">首页</a>
+            <span id="albumNameFlag" class="crumbs-arrow">&gt;</span>
+            <em id="paimaiTitle">易趣 易趣竞价</em>
+        </div>
+        <div class="pm-stage fn-clear">
+            <div class="pm-main">
+                <div class="pm-head fn-clear">
+                    <div class="pm-head-l fn-left">
+                        <!--  /widget/preview/preview.vm -->
+                        <div id="preview">
+                            <div class="sellout" style="display: none;">
+                                <div class="scontent">已售完</div>
+                            </div>
+                            <div class="jqzoom">
+                                <a href="" title="">
+                                    <img id="proImg" class="proImg" src="" alt="" width="350" height="350" s="xl">
+                                </a>
+                            </div>
+                            <div id="idViewer" class="izViewer" style="display: none; padding: 0px; overflow: hidden;"></div>
+                            <div id="spec-list" class="no_center">
+                                <div class="spec-items" style="position: absolute; width: 380px; height: 62px; overflow: hidden;">
+                                    <ul class="lh" style="position: absolute; left: 0px; top: 0px; width: 358px;"></ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/ /widget/preview/preview.vm -->
+                    </div>
+                    <div class="pm-head-r fn-left">
+                        <h1>易趣 易趣竞价</h1>
+                        <div class="pm-status fn-clear">
+                            <div class="pm-status-mark pm-status-mark-will" id="paimaiwill">尚未开始</div>
+                            <div class="pm-status-mark pm-status-mark-on" id="paimaion">正在进行</div>
+                            <div class="pm-status-mark pm-status-mark-over" id="paimaiover">竞价结束</div>
+                            <div class="pm-time pm-will-time" id="nostart">
+                                <span class="pm-time-title">距离开拍仅剩:</span>
+                                <span class="J_Timeleft"></span>
+                            </div>
+                            <div class="pm-time pm-on-time" id="startting">
+                                <span class="pm-time-title">距离结束仅剩:</span>
+                                <!--<span class="J_Timeleft"><span class="time-num pm-num">00</span><span>天</span><span class="time-num pm-num">7</span><span>时</span><span class="time-num pm-num">26</span><span>分</span></span>-->
+                            </div>
+                            <div class="pm-time pm-over-time">
+                                <span class="pm-time-title">结束时间:</span>
+                                <span id="endTimeSpan"></span>
+                            </div>
+                            <div class="pm-people">
+                                <span class="pm-people-cell"><em class="pm-num" id="accessSignNum">1</em>人已报名</span>
+                                <span class="pm-people-cell"><em class="pm-num access" id="accessNum">98</em>次围观</span>
+                            </div>
+                        </div>
+                        <div class="pm-operation pm-operation-n hide" id="pm-operation-ensure-n">
+                            <div class="pm-money">
+                                <span class="title">起 拍 价：</span>
+                                <span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips="">5,500</span>
+										</span>
+                            </div>
+                            <div class="pm-bid">
+                                <span class="title">服 务 费：</span>
+                                <span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-deposit-price pm-num tips" data-tips="">10.00</span>
+										</span>
+                                <span>不成拍则结束后退还</span>
+                            </div>
+                            <div class="pm-submit">
+                                <a id="submitEnsure" href="//bid.beta.eachnet.com/bidWeb/payment/checkout" onclick="javascript:goPay()" target="_blank" class="pm-button pm-apply-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|13">
+                                    <span class="icon"></span>
+                                    <span class="text">交服务费报名</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pm-operation hide" id="pm-operation-ensure-y">
+                            <div class="pm-money">
+                                <span class="title">起 拍 价：</span>
+                                <span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips="">5,500</span>
+										</span>
+                            </div>
+                            <div class="pm-submit">
+                                <a href="javascript:void(0)" class="pm-button pm-apply-button fn-inline-block">
+                                    <span class="icon"></span>
+                                    <span class="text">报名成功，等待开拍</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pm-operation pm-operation-n hide" id="pm-operation-start-n">
+                            <div class="pm-money">
+                                <span class="title">当 前 价：</span>
+                                <span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips=""></span>
+										</span>
+                                <a href="javascript:void(0)" class="pm-bid-cnt">出价<em>0</em>次</a>
+                            </div>
+                            <div class="pm-bid">
+                                <span class="title">服 务 费：</span>
+                                <span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-deposit-price pm-num tips" data-tips="">300</span>
+										</span>
+                                <span>不成拍则结束后退还</span>
+                            </div>
+
+                            <div class="pm-submit">
+                                <a id="submitEnsure1" href="//bid.beta.eachnet.com/bidWeb/payment/checkout" onclick="javascript:goPay()" target="_blank" class="pm-button pm-apply-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|13">
+                                    <span class="icon"></span>
+                                    <span class="text">交服务费报名</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pm-operation hide" id="pm-operation-start-y">
+                            <div class="pm-money">
+                                <span class="title">当 前 价：</span>
+                                <span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips=""></span>
+										</span>
+                                <a href="javascript:void(0)" class="pm-bid-cnt">出价<em>0</em>次</a>
+                            </div>
+                            <div class="pm-bid">
+                                <span class="title">出　　价：</span>
+                                <em class="fn-rmb">¥</em>
+                                <input type="text" class="pm-price-input" value="" title="出价框，请输入竞价价格" id="outPriceInput" onkeyup="priceDisplay(this.value, 0)">
+                                <div class="detail-info-cn-money">
+                                    <ul class="clearfix" id="priceUnit">
+                                        <li>
+                                            <div>千</div>
+                                        </li>
+                                        <li>
+                                            <div>百</div>
+                                        </li>
+                                        <li>
+                                            <div>十</div>
+                                        </li>
+                                        <li>
+                                            <div>元</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="javascript:addPrice()" class="plus fn-inline-block" id="maxPrice" clstag="pageclick|keycount|PCpaimai_details|18"></a>
+                                <a href="javascript:void(0);" class="minus fn-inline-block disabled" id="subprice" clstag="pageclick|keycount|PCpaimai_details|19"></a>
+                                <span class="bid-notice">
+                                        	<span class="iconfont-pai notice-icon"></span>
+										<span class="fn-inline-block notice-text">出价成功，但被其它用户的代理价超过！</span>
+										</span>
+                            </div>
+                            <div class="pm-submit">
+                                <a href="javascript:void(0)" id="outPrice" class="pm-button pm-bid-button pm-bid-button-result fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|20">
+                                    <span class="icon"></span>
+                                    <span class="text">出价<em></em></span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="pm-operation hide" id="pm-operation-over">
+                            <div class="bid-result" style="display: none;">
+                                <h2 id="paimai_over">
+                                    <i></i>
+                                    <span class="text">竞价已结束</span>
+                                </h2>
+                                <h3>当前价<em class="fn-rmb">¥</em><span></span></h3>
+                            </div>
+                            <div class="bid-result" style="display: none;">
+                                <h2 id="paimai_deal">
+                                    <i></i>
+                                    <span class="text">竞价已成交</span>
+                                </h2>
+                                <h3>成交价<em class="fn-rmb">¥</em><span></span></h3>
+                            </div>
+                            <div class="bid-result" style="display: none;">
+                                <h2 id="paimai_liupai">
+                                    <i></i>
+                                    <span class="text">已流拍</span>
+                                </h2>
+                                <h3>当前价<em class="fn-rmb">¥</em><span></span></h3>
+                            </div>
+                            <div class="bid-result" style="display: none;" >
+                                <h2><i></i>恭喜！您已胜出！</h2>
+                                <h3>成交价：  <em id="deal_current_price"></em>&nbsp;<div id="amount_to_be_paid_div" style="display: none;">待支付金额：  <em id="amount_to_be_paid"></em><span id="amount_to_be_paid_span" style="display: none;">（服务费已抵扣部分成交款）</span></div>
+                                </h3>
+                                <p>请在72小时内完成付款，若在72小时内未付款，系统将自动关闭交易，并扣除服务费赔付给送拍机构</p>
+                                <div class="pm-submit" style="width: 100%;position: relative;left: 0;top: 0;">
+                                    <a href="#" class="pm-button pm-pay-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|25">
+                                        <span class="text">去付款</span>
+                                    </a>
+                                    <a href="#" target="_blank" class="pm-button pm-order-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|26">
+                                        <span class="text">查看订单</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bid-result" style="display: none;">
+                                <h2><i></i>竞价已成交，生成订单中…</h2>
+                                <p>请在2分钟后
+                                    <a href="javascript:location.reload()">刷新</a>查看</p>
+                            </div>
+                            <div class="bid-result" style="display: none;">
+                                <h2 id="paimai_win">
+                                    <span class="icon"></span>
+                                    <span class="text">恭喜！您已胜出！</span>
+                                </h2>
+                                <h3>当前价<em class="fn-rmb">¥</em><span id="deal_current_price_old"></span></h3>
+                                <p id="submit_message">请在24小时之内提交订单；若在24小时内未提交订单，系统将自动关闭交易，并扣除您的服务费用于赔付送拍机构</p>
+                                <div class="pm-submit" id="submit_order" style="display: none;" style="width: 100%;position: relative;left: 0;top: 0;">
+                                    <a href="#" class="pm-button pm-pay-button fn-inline-block">
+                                        <span class="text">提交订单</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pm-attachment">
+                            <ul class="fn-clear">
+                                <li class="fore1">
+                                    <span class="title">起 拍 价：</span>
+                                    <em class="fn-rmb">¥5,500</em>
+                                </li>
+                                <li class="fore2">
+                                    <span class="title tips" data-tips="" title="出价时最少的加价金额">加价幅度：</span>
+                                    <em class="fn-rmb pm-red" id="priceRaiseLow">¥100</em>
+                                </li>
+                                <li class="fore3">
+                                    <span class="title tips" data-tips="">保 留 价：</span>
+                                    <em class="fn-rmb pm-red" id="priceRaiseHigh">有</em>
+                                </li>
+                            </ul>
+                            <ul class="fn-clear">
+                                <li class="fore1">
+                                    <span class="title tips" data-tips="">延时周期：</span>
+                                    <span id="reservePrice">5分钟/次</span>
+                                </li>
+                                <li class="fore2">
+                                    <span class="title">竞价方式：</span>
+                                    <span id="saleType">升价拍</span>
+                                </li>
+                                <li class="fore3">
+                                    <span class="title tips" data-tips="">竞买代码：</span>
+                                    <span>暂无代码</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <span class="pm-notify-btn hide" id="hasCancelRemind" style="display: none;">
+                                <a class="btn-subscribe btn-cancel">
+                                    <span class="notify-icon fn-inline-block"></span>
+								<span class="notify-text">已取消提醒</span>
+								</a>
+								</span>
+
+                        <span class="pm-notify-btn" id="hasSetRemind" style="display: none;">
+                                <a href="#" class="btn-subscribe btn-cancel">
+                                    <span class="notify-icon fn-inline-block"></span>
+								<span class="notify-text">已设置提醒</span>
+								</a>
+								<div class="notify-sub">
+									<a href="javascript:cancelOrAddBeginRemind();" id="paimaiBeginBtn"><i class="fn-inline-block"></i>开拍前</a>
+									<a href="javascript:cancelOrAddEndRemind();" id="paimaiEndBtn"><i class="fn-inline-block"></i>结束前</a>
+								</div>
+								</span>
+
+                        <div class="pm-support">
+                            <input type="hidden" id="paimaiId" value="104814968">
+                            <input type="hidden" id="skuId" value="24160125535">
+                            <input type="hidden" id="ensurePrice" value="300.00">
+                            <input type="hidden" id="ensureSource" value="2">
+                            <input type="hidden" id="delayed" value="5">
+                            <input type="hidden" id="agent" value="1">
+                            <input type="hidden" id="priceLowerOffset" value="0.0">
+                            <input type="hidden" id="priceHigherOffset" value="0.0">
+                            <input type="hidden" id="maxPrice" value="0.0">
+                            <input type="hidden" id="startPrice" value="5500.0">
+                            <input type="hidden" id="vendorId" value="663795">
+                            <input type="hidden" id="startTime" value="2018-01-26 22:00:00.0">
+                            <input type="hidden" id="endTime" value="2018-01-27 10:00:00.0">
+                            <input type="hidden" id="albumId" value="100369">
+                            <input type="hidden" id="platType" value="4">
+                            <input type="hidden" id="biddingCycle" value="20">
+                            <span class="title">服务支持：</span>
+                            <span class="text">不支持7天无理由退货</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pm-body" id="seemore">
+                    <div class="pm-bid-flow17">
+                        <div class="title">竞价流程：</div>
+                        <ul>
+                            <li class="fore1"><i class="icon"></i>
+                                <a href="javascript:void(0)" target="_blank">交服务费</a></li>
+                            <li class="fore2"><i class="icon"></i>
+                                <a href="javascript:void(0)" target="_blank">参与竞价</a></li>
+                            <li class="fore3"><i class="icon"></i>
+                                <a href="javascript:void(0)" target="_blank">竞价成功</a></li>
+                            <li class="fore4"><i class="icon"></i>
+                                <a href="javascript:void(0)" target="_blank">支付货款</a></li>
+                            <li class="fore5"><i class="icon"></i>
+                                <a href="javascript:void(0)" target="_blank">完成收货</a></li>
+                        </ul>
+                    </div>
+                    <div class="pm-addition">
+                        <div class="tab-menu-wrap">
+                            <ul class="tab-menu fn-clear">
+                                <li class="ui-tab-item curr" id="tab1">
+                                    <a href="#adition-vediod" clstag="pageclick|keycount|PCpaimai_details|33">拍品描述</a>
+                                </li>
+                                <li class="ui-tab-item" id="tab2">
+                                    <a href="#record-list" clstag="pageclick|keycount|PCpaimai_details|34">出价记录(<span class="record-num pm-num">0</span>)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pm-detail-tab">
+
+                            <div class="ui-tab-panel">
+                                <div class="pm-remind-tip17" style="margin: 15px;">
+                                    <div class="title">特别提示</div>
+                                    <ul>
+                                        <li><span>1.真伪：</span>拍品介绍（包括图片、文字、视频等）均由卖家自行发布并上传，所有上传的拍品由卖家自行承担相应担保责任。</li>
+                                        <li><span>2.交货：</span>竞价物品不同于普通网购商品，多数属于孤品，消费者通过竞价方式购买拍品，一旦售出将影响拍品价值，不支持快递发货，由买卖双方线下约定验货并签收。</li>
+                                        <li><span>3.退换货：</span>竞价物品一旦售出，不支持“7天退货”服务，竞价前请充分考虑。</li>
+                                    </ul>
+                                </div>
+
+                                <div id="adition-vediod" style="margin: 20px;">
+                                </div>
+                                <div id="addition-desc">
+                                    <div class="panel-title">
+                                        <div class="panel-title-text">拍品描述</div>
+                                        <div class="panel-title-line"></div>
+                                    </div>
+                                    <div id="addition-desc-content"></div>
+                                </div>
+                            </div>
+                            <div id="record-list" class="ui-tab-panel">
+                                <div class="panel-title">
+                                    <div class="panel-title-text">出价记录</div>
+                                    <div class="panel-title-line"></div>
+                                </div>
+                                <dl class="record-list" id="record-list-down"></dl>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pm-sub">
+                <div class="records">
+                    <div class="list-header">
+                        <h3 id="bidCount">出价记录(<span class="record-num pm-num">0</span>)</h3>
+                    </div>
+                    <div class="list-content fn-clear">
+                        <dl class="record-list" id="record-list-up"></dl>
+                        <a href="#record-list" class="records-btn fn-right" clstag="pageclick|keycount|PCpaimai_details|12">查看更多<i>&gt;</i></a>
+                    </div>
+                </div>
+                <div class="recommend-over">
+                    <div class="list-header">
+                        <h3>热门推荐</h3>
+                    </div>
+                    <div class="tui-records">暂无，敬请期待！</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ui-dialog" class="ui-dialog" style="width: 420px; position: absolute; z-index: 10000; display: none; overflow: hidden; top: 377px; left: 720.5px;">
+    <div class="ui-dialog-title" style="width: 400px;"> <span>提示</span> </div>
+    <div class="ui-dialog-content" style="height: 138px; width: 400px; overflow: hidden;">
+        <div class="tip-box warn-box">
+            <h3 class="fc-yellow">请在您新打开的页面上完成付款。</h3>
+            <ul>
+                <li>付款完成前请不要关闭此窗口。</li>
+                <li>完成付款后请根据您的情况点击下面的按钮：</li>
+            </ul>
+            <div class="op-btns">
+                <a href="javascript:refresh()" class="btn-17 mr10" clstag="pageclick|keycount|PCpaimai_details|16">已完成支付</a>
+            </div>
+        </div>
+    </div>
+    <a class="ui-dialog-close" title="关闭"><span class="ui-icon ui-icon-delete"></span></a>
+</div>
+<script type="text/javascript" src="//i0.beta.ulecdn.com/eachnet/js/vi.js"></script>
+<!--<script type="text/javascript" src="vi.js"></script>-->
+<script type="text/javascript" src="//i0.beta.ulecdn.com/eachnet/js/jqzoom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="UTF-8">
+    <title>拍卖列表</title>
+    <link rel="stylesheet" href="http://i0.beta.ulecdn.com/eachnet/css/header.css" />
+    <link rel="stylesheet" href="http://i0.beta.ulecdn.com/eachnet/css/_search.css" />
+    <script src="http://i0.ulecdn.com/j/lib/jquery.js"></script>
+    <script src="http://i0.ulecdn.com/j/jend/jend.js"></script>
+    <script src="http://i0.beta.ulecdn.com/eachnet/js/header.js"></script>
+  </head>
+  
+  <body class="root">
+
+    <div id="nav-2018">
+      <div class="w">
+        <div id="categorys-2018" class="dorpdown" data-type="default">
+          <div class="dt">
+            <a>首页</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w">
+      <div class="list-selector" id="list-selector">
+        <div class="container" id="J_container">
+          <div class="selector" id="J_selector">
+
+            <!-- START 选择菜单-分类 -->
+            <div class="J_selectorLine s-brand" id="J_selectorCat">
+              <div class="sl-wrap v-fixed">
+                <div class="sl-key">
+                  <span>分类：</span>
+                </div>
+                <div class="sl-value">
+                  <div class="sl-v-list">
+                    <ul class="J_valueList" id="catsArea">
+                      <li data-catid="" class="current">
+                        <a href="javascript:;" title="全部"><i></i>全部</a>
+                      </li>
+                      <li data-catid="1" class="">
+                        <a href="javascript:;" title="邮票"><i></i>邮票</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END 选择菜单-分类 -->
+
+            <!-- START 选择菜单-夺宝状态 -->
+            <div class="J_selectorLine s-brand" id="brandsAreaPanel">
+              <div class="sl-wrap">
+                <div class="sl-key">
+                  <span>竞价状态：</span></div>
+                <div class="sl-value">
+                  <div class="sl-v-list">
+                    <ul class="J_valueList" id="statesArea">
+                      <li data-catid="" class="current">
+                        <a href="javascript:;">全部</a></li>
+                      <li data-catid="1">
+                        <a href="javascript:;">正在进行</a></li>
+                      <li data-catid="0">
+                        <a href="javascript:;">即将开始</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END 选择菜单-夺宝状态 -->
+          </div><!-- / selector-->
+
+
+          <div id="J_main" class="g-main">
+            <div class="m-list" style="width: 100%;">
+              <div class="ml-wrap">
+
+                <!-- START 列表页 -->
+                <div id="plist" class="J-goods-list">
+                  <ul class="gl-warp clearfix"></ul>
+                </div>
+                <!-- END 列表页 -->
+
+                <!-- START 分页 -->
+                <div class="page clearfix">
+                  <div class="p-wrap" id="J_bottomPage">
+                    <div id="pager" class="pager">
+                      <ul class="pager-num">
+                        <li class="pre nos">
+                          <a href="javascript:">&lt; 上一页</a></li>
+                        <li class="cur">
+                          <a href="javascript:">1</a></li>
+                        <li class="next nos">
+                          <a href="javascript:">下一页 &gt;</a></li>
+                      </ul>
+                      <span class="pager-count">共
+                        <i>1</i>页</span>
+                      <span class="pager-skip">到第
+                        <input value="1" type="text">页
+                        <a href="javascript:;" class="pager-skip-btn">确定</a></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- END 分页 -->
+
+              </div><!-- / ml-wrap -->
+            </div><!-- / m-list -->
+            <div class="clr"></div>
+          </div><!-- / g-main -->
+        </div><!-- / container -->
+      </div><!-- / list-selector -->
+    </div><!-- / w -->
+
+
+    <script src="http://i0.beta.ulecdn.com/eachnet/js/_search.js"></script>
+  </body>
+
+</html>

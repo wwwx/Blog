@@ -1,0 +1,879 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单详情</title>
+
+<!-- headcode:simp -->
+<meta name="data-uspm" content="1.1" />
+<script>var SITE_ID=1, _jend_page_loadtime = new Date().getTime();</script>
+
+
+<link href="//i2.ulecdn.com/i/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="//i2.ulecdn.com/i/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="//i2.ulecdn.com/i/favicon.ico" rel="bookmark" type="image/x-icon" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://i0.beta.ulecdn.com/eachnet/css/header.css" />
+<script src="http://i1.ulecdn.com/j/lib/jquery.js"></script>
+<script src="http://i1.ulecdn.com/j/jend/jend.js"></script>
+<script src="http://i0.beta.ulecdn.com/eachnet/js/header.js"></script>
+
+
+
+
+
+<!-- headcode:simp --><link rel="stylesheet" type="text/css" href="//i0.ule.com/c/utility/dialog.css" />
+<link rel="stylesheet" type="text/css" href="//i0.ule.com/c/vi/2012/1116/vi.css" />
+<link rel="stylesheet" type="text/css" href="//i0.ule.com/c/my/100613/main.css" />
+<link rel="stylesheet" type="text/css" href="//i0.ule.com/daigou/c/checkout/2016/0229/dgbz.css" />
+<link rel="stylesheet" href="//i0.ule.com/c/ule-order/ulechainorder.css" />
+<link rel="stylesheet" type="text/css" href="//i0.ule.com/c/checkout/110117/pay_plus.css"/>
+<script type="text/javascript" src="//i0.ule.com/j/app/ule-order/mask.js"></script>
+ <link rel="stylesheet" type="text/css"  href="//i0.ule.com/c/my/2017/0609/order_detail-min.css"/>
+<script type="text/javascript" src="//i0.ule.com/j/app/ule-order/2016/0727/order_detail.js"></script>
+<script type="text/javascript" src="//i0.ule.com/daigou/j/checkout/2016/1220/dgbz.js"></script>
+<!--  <script type="text/javascript" src="Constants.GLOBAL_IMAGE_SERVER/j/app/ule-order/2013/0717/cancelreson.js"></script>-->
+ <!-- 村邮站相关 -->
+<!--  <link rel="stylesheet" type="text/css" href="Constants.GLOBAL_IMAGE_SERVER/c/checkout/2013/1118/orderRecord.css"/>-->
+<script type="text/javascript" src="/myShoppingOrderWeb/jsp/upload-js/cancelreson.js"></script>
+<link rel="stylesheet" type="text/css" href="//i0.ule.com/c/checkout/2014/1023/orderRecords.css"/>
+
+<link rel="stylesheet" href="//i0.ule.com/c/ule-order/2015/0316/ulechinaorder.css" />
+
+<link rel="stylesheet" href="//i0.ule.com/c/checkout/2015/1225/detail.css" type="text/css"></link>
+<script type="text/javascript" src="//i0.ule.com/j/event/2017/1214/global.js"></script>
+<link rel="stylesheet" href="//i0.ule.com/c/event/2017/1214/global.css"/>
+<script type="text/javascript">
+	_resize();
+</script>
+<style type="text/css">
+        #ulechina-order .input_searchbutton { cursor:pointer; }
+        #ulechina-order .btn-alert { width:70px; background:#f90; margin-left:5px; border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; }
+        #ulechina-order .btn-cancel { width:70px; background:#ddd; color:#666; margin-left:5px; border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; }
+        #receiver_action span { color:#f60; font-size:12px; font-weight:normal; }
+        #receiver_frm input { width:100px; height:20px; line-height:20px; border:solid 1px #ccc; font-size:12px; }
+        #ulechina-order #receiver_tips { color:#f60; background-color:#ffe; padding:5px; border:solid 1px #ddd; margin-top:5px; }
+   /* mine */
+		.wrap1-item, .wrap2-item, .wrap3-item { display:block;}
+		#address_info fieldset label, #checkoutmain fieldset span.label {
+			width:92px;
+			text-align:right;
+		}
+		#goods {
+			width: 96%;
+			margin: 0 auto;
+			height: 291px;
+			background-color: #CCC;
+			border-top: 2px solid #C2DDF2;
+			background-color: #F7FAFF;
+		}
+		.cancel-btn , .save-btn {
+			float:left;
+			display:inline;
+			margin-left:20px;
+		}
+		.save-btn {
+			margin-left:115px
+		}
+   </style>
+     <!--[if IE 8]>
+<style type="text/css" >
+.order_body .customer_info .customer_info_left div.ul_invoice_info span
+ {
+  top:165px;
+ }
+</style>
+<![endif]-->
+<style>
+	.phone{
+		font-weight:bolder;
+		font-size:18px;
+	}
+	.tbl { text-align:left;}
+	
+	#edit-addr {color: #316AC5;}
+	.detailed ul li.addr-content {
+		width:96%; margin:0 auto; height:291px; background-color:#ccc;
+		border-top:2px solid #c2ddf2;
+		background-color:#f7faff;
+		display:none;
+	}
+	
+	#address_info fieldset label em, #checkoutmain fieldset span.label em {
+		position: absolute;
+		right: -13px;
+		color: #F60;
+	}
+	
+	
+	*div {padding-top:1px;}
+</style>
+
+<style>
+  .miaoShaOrder{
+    height:50px;
+	background:#F8F8F8 url(//i0.ule.com/i/my/2013/1021/TipInfo.png) no-repeat 20px center;
+	padding-left:45px;
+	color:#F66802;
+	margin-bottom:26px;
+	line-height:50px;
+	font-size:16px;
+	font-weight:bold;
+	
+  }
+</style>
+
+<script language="javascript" type="text/javascript">
+
+$(document).ready(function() {
+	/**
+	 * 取消订单
+	 * @return {[type]} [description]
+	 */
+	$(".cancel").click(function(ev){
+	  /**
+	   * dorderid 订单类型
+	   * undefined 大订单 false
+	   * string 小订单
+	   */
+	  var bookType = $(this).attr('dorderid') || false,
+
+	  /**
+	   * 取消订单类型 data-type
+	   * 0: 有退款理由的弹出层
+	   * 3: 无退款理由的弹出层
+	   * 1: 只缺货取消
+	   * 2: 缺货和整单取消
+	   */
+	      canType = $(ev.target).attr('data-type'),
+	      escId = $(ev.target).attr('data-id');
+	  // 根据订单号发送ajax判断是否超过5分钟
+	  var urlStr= "/myShoppingOrderWeb/beforeCancelOrder.do";
+		dataStr="escOrderid=" + escId;
+		var returnObj = $.ajax({
+			type: "POST",
+			url: urlStr,
+			data:dataStr,
+			cache: false,
+			async: false
+	  });
+		var returnStr = returnObj.responseText ;
+		var jsonObj =  returnStr.parseJSON(); 
+	  //JEND.util.dialog.alert(returnStr);
+	  //setHasReason(bookType, escId, 1);
+	  	var retCode = jsonObj.retCode ;
+		var retMsg = jsonObj.retMsg ;
+		if("0000" == retCode || "415" == retCode || "416" == retCode || "417" == retCode){
+			window.open("/myShoppingOrderWeb/toCancelOrder.do?escOrderid="+escId+"&timestamp="+new Date().getTime()) ;
+			return ;
+		}
+		if("0002" == retCode){
+			JEND.util.dialog.alert(retMsg);
+			return ;
+		}
+		if("0001" == retCode){
+	    	switch(canType){
+		      case '1':
+		        onlyLackReason(bookType, escId, 2);
+		        break;
+		      case '2':
+		        setlackReason(bookType, escId, 2);
+		        break;
+		      case '3':
+		        setNoReason(bookType, escId, 1);
+		        break;
+		      default:
+		        setHasReason(bookType, escId, 1);
+		        break;
+		    }
+	    }
+	});
+});
+
+
+
+
+//于斯订单手机号设置样式 
+function setPhoneStyle(){
+	var usrPhone='152****0721';
+	if(null!=usrPhone && usrPhone!="" && usrPhone.length>=11){
+		$("#labtransUsrPhone").html(usrPhone.substring(0,3)+"\&nbsp;\&nbsp;"+usrPhone.substring(3,7)+"\&nbsp;\&nbsp;"+usrPhone.substring(7,11)+"\&nbsp;\&nbsp;");
+	}
+}
+	
+	function setPostCode() {
+		//$('#post_code2').value=$('.post-code-cache').html();
+	
+	}
+	// 取消缺货的商品
+	function cancel() {
+	    if(window.confirm("是否确认要取消缺货的商品？")) {
+	        $('#frmLackGoods').submit();
+	    }
+	}
+	 function cancelorder(escId,reason,operateType){
+		if(escId==''){
+   			//alert('活动太火爆啦，请稍后再试');
+   			JEND.util.dialog.alert('活动太火爆啦，请稍后再试'); 
+   			return;
+   		}
+		
+		var urlStr= "/myShoppingOrderWeb/beforeCancelOrder.do";
+		dataStr="escOrderid=" + escId;
+		var returnObj = $.ajax({
+			type: "POST",
+			url: urlStr,
+			data:dataStr,
+			cache: false,
+			async: false
+	    });
+		var returnStr = returnObj.responseText ;
+		var jsonObj =  returnStr.parseJSON(); 
+		//JEND.util.dialog.alert(returnStr);
+		//setHasReason(bookType, escId, 1);
+		var retCode = jsonObj.retCode ;
+		var retMsg = jsonObj.retMsg ;
+		
+		if("0001" != retCode){
+			JEND.util.dialog.alert("活动太火爆啦，请稍后再试");
+			return ;
+		}
+		
+        document.getElementById("escId1").value = escId;
+        document.getElementById("cancelReason").value = reason;
+        document.getElementById("operateType").value = operateType;//用于判断是整单取消还是缺货物品取消
+        //setTimeout(function(){ JEND.page.showLoading('正在取消订单……'); }, 500);
+        JEND.page.showLoading('正在取消订单……');
+        $.post("/myShoppingOrderWeb/cancelBuyerOrder.do?timestamp=" + new Date().getTime(), $("#orderDetail").serialize(), function(data) {
+					//mask2.hide();
+					if (data && $.trim(data).toLowerCase() == 'success') {
+						JEND.page.alert('取消订单成功', function() {
+							setTimeout(function(){ JEND.page.showLoading('正在刷新页面……'); }, 500);
+							$('#orderDetail').submit();
+						});
+					}else {
+						JEND.page.alert(data, function() {
+							setTimeout(function(){ JEND.page.showLoading('正在刷新页面……'); }, 500);
+							//$('#orderList').submit();
+							//search();
+							$('#orderDetail').submit();
+						});
+					}
+				});
+       // document.getElementById("orderDetail").action = "/myShoppingOrderWeb/cancelBuyerOrder.do";
+       // document.getElementById("orderDetail").submit();
+	}
+    function confirmSign(escOrderid){
+ 			if(escOrderid==''){
+ 				JEND.util.dialog.alert('活动太火爆啦，请稍后再试'); 
+ 				return;
+ 			}
+	        document.getElementById("escId1").value = escOrderid;
+	        //setTimeout(function(){ JEND.page.showLoading('正在确认订单……'); }, 500);
+	        JEND.page.showLoading('正在确认订单……');
+        	$.post("/myShoppingOrderWeb/confirmOrderSign.do?timestamp=" + new Date().getTime(), $("#orderDetail").serialize(), function(data) {
+					//mask2.hide();
+					if (data && $.trim(data).toLowerCase() == 'success') {
+						JEND.page.alert('确认收货成功', function() {
+							setTimeout(function(){ JEND.page.showLoading('正在前往评价页面……'); }, 500);
+							//$('#orderDetail').submit();
+							window.location.href ='/myShoppingOrderWeb/toCommentOrder.do?id='+escOrderid+'&comfirmFlow=next';
+						});
+					}else {
+						JEND.page.alert(data, function() {
+							setTimeout(function(){ JEND.page.showLoading('正在刷新页面……'); }, 500);
+							//$('#orderList').submit();
+							//search();
+							$('#orderDetail').submit();
+						});
+					}
+				});
+	       // document.getElementById("orderDetail").action = "/myShoppingOrderWeb/confirmOrderSign.do";
+	       // document.getElementById("orderDetail").submit();
+        
+    }
+    function confirmReplaceOrderSign(deleveryOrderId,escOrderid){
+		if(escOrderid==''){
+			JEND.util.dialog.alert('活动太火爆啦，请稍后再试'); 
+			return;
+		}
+        document.getElementById("escId1").value = escOrderid;
+        document.getElementById("doId1").value = deleveryOrderId;
+         //setTimeout(function(){ JEND.page.showLoading('正在确认订单……'); }, 500);
+         JEND.page.showLoading('正在确认订单……');
+        	$.post("/myShoppingOrderWeb/confirmReplaceOrderSign.do?timestamp=" + new Date().getTime(), $("#orderDetail").serialize(), function(data) {
+					//mask2.hide();
+					if (data && $.trim(data).toLowerCase() == 'success') {
+						JEND.page.alert('确认收货成功', function() {
+							setTimeout(function(){ JEND.page.showLoading('正在刷新页面……'); }, 500);
+							$('#orderDetail').submit();
+						});
+					}else {
+						JEND.page.alert(data, function() {
+							setTimeout(function(){ JEND.page.showLoading('正在刷新页面……'); }, 500);
+							//$('#orderList').submit();
+							//search();
+							$('#orderDetail').submit();
+						});
+					}
+				});
+       // document.getElementById("orderDetail").action = "/myShoppingOrderWeb/confirmReplaceOrderSign.do";
+       // document.getElementById("orderDetail").submit();
+        
+    }
+     function resendActiveMsg(escId,obj){
+        $(obj).attr("disabled",true);
+        if(escId==""){
+  			JEND.util.dialog.alert('活动太火爆啦，请稍后再试'); 
+  			return;
+  		}
+  		JEND.util.dialog.confirm({title:'操作确认', message:'您是否确定要激活？',
+			    callback:function(){
+		    	var urlStr="/myShoppingOrderWeb/resendActiveOrderMsg.do";
+				dataStr="escOrderid=" + escId;
+				var returnStr = $.ajax({
+					type: "POST",
+		    		url: urlStr,
+		    		data:dataStr,
+		    		cache: false,
+		    		async: false
+		        }).responseText;
+		        JEND.util.dialog.alert(returnStr);
+		        if(returnStr.indexOf("重发成功") > -1){
+		         	$(obj).css("color", "gray").removeAttr("onclick");;
+		        }
+	      		 }
+			});
+    }
+     
+  	function confirmGotoPay(orderAmountStatus,escId,type){
+ 		if(orderAmountStatus=='3'){
+			JEND.util.dialog.alert('请先付完定金后再付尾款!'); 
+			return;
+		}
+ 		if(escId=='' || type==''){
+			JEND.util.dialog.alert('活动太火爆啦，请稍后再试!'); 
+			return;
+		}
+		window.location.href="https://checkout.ule.com/payment/pay/presell-pay-select!index.do?orderNo="+escId+"&presellType="+type;
+ 	}
+	function unsubscribe(obj,dloId,prdId){
+		$(obj).attr("disabled",true);
+		if(dloId==null||prdId==null){
+			JEND.util.dialog.alert('活动太火爆啦，请稍后再试'); 
+			return;
+		}
+		JEND.util.dialog.confirm({title:'操作确认', message:'您是否确定要退订此期刊？',
+			    callback:function(){
+				var urlStr="/myShoppingOrderWeb/unsubscribe.do";
+		  		dataStr="dloId=" + dloId + "&prdId=" + prdId;
+		  		var returnStr = $.ajax({
+		  			type: "POST",
+		  			url: urlStr,
+		  			data:dataStr,
+		  			cache: false,
+		  			async: false
+		  	    }).responseText;
+		  	    JEND.util.dialog.alert(returnStr);
+		  	     if(returnStr.indexOf("退订成功") > -1){
+		         	$(obj).css("color", "gray").removeAttr("onclick");;
+		        }
+		  	}
+		});
+	}
+	
+	//于斯视频播放 采用jsonp，解决跨域问题
+	function yusiTvPlay(escOrderid){
+		$.ajax({
+            url:"/myShoppingOrderWeb/yusiTvPlay.do",
+            type:"get",
+            data:{escId:escOrderid},
+            dataType: "jsonp",
+            jsonp: "jsonpCallback",
+            cache: false,
+	  		async: false,
+            success:function(data){
+            	if(data.code == "0001"){
+            		alert("视频播放异常！");
+            		return false;
+            	}
+            	document.getElementById("yusiOrderForm").action = data.returnMsg;
+            	document.getElementById("yusiOrderForm").submit();
+            },
+            error: function(){
+            	
+            }         
+         });
+	}
+</script>
+<style>
+.tbl {
+	text-align:left;
+}
+.store-name{ height:50px; line-height:50px; padding-right:10px;}
+.store-name a{ color:#0065cd; font-size:14px;}
+.detailed .order_number li.timg .store-name a{ bottom:0; display:inline; padding-left:24px;}
+.detailed .order_number li.timg{ text-indent:0;}
+</style>
+</head>
+<body data-uspm="311" onload="setPhoneStyle()">
+    
+ 
+
+<!-- /header:simp --><div id="wrapper"> 
+  <!--内容开始-->
+  <div class="detailed" id="ulechina-order" data-uspm="207" data-uspm-type="all">
+	<!--<div class="crumbs">
+		<a href="http://ule.com">首页</a> <span class="c">></span> <a href="http://my.ule.com/myid/me.do">我的邮乐</a> <span class="c">></span> <a href="http://my.ule.com/myShoppingOrderWeb/buyerOrderView.do">购物订单</a> <span class="c">></span> <span class="ac"><a  class="current">订单详情</a></span>
+	</div>-->
+	<form data-uspm-form="209" id="orderDetail" name="orderDetail" method="post" action="/myShoppingOrderWeb/buyerOrderInfo.do">
+	    <input type="hidden" name="orderType" id="orderType1" value="1401"/>
+	    <input type="hidden" name="orderStatus" id="orderStatus1" value="1"/>
+		<input type="hidden" name="escId" id="escId1" value="2018013042985192"/>
+		<input type="hidden" name="id" id="id" value="2018013042985192"/>
+		<input type="hidden" name="cancelReason" id ="cancelReason" value=""/>
+		<input type="hidden" name="operateType" id ="operateType" value=""/>
+		<input type="hidden" name="requestFrom" id="requestFrom" value="orderinfo"/>
+		<input type="hidden" name="doId" id="doId1" value=""/>
+	</form>
+	<div class="order_number">
+		<!-- 不启用 -->
+        <!-- 手机充值 订单-->
+        <!-- 集团采购 订单 -->
+        <!-- 分销订单 -->
+        <!-- 团购 订单 -->
+        <!-- 邮乐卡兑换 订单 -->
+        <!-- 交行订单 -->
+        <!-- 用户可以确认收货 -->
+        <!-- 河南分销订单 -->
+        <!-- 允许用户手动确认收货的订单类型 -->
+        <!-- 秒杀活动 -->
+        <!-- 邮掌柜 订单 -->
+        <!-- 显示发票信息的商家 -->
+        <!-- 显示发票信息的商家 -->
+        <!-- 邮掌柜可否查看会员订单 -->
+        <!-- 是否慈善线下特卖和义卖订单 -->
+        <!-- 是否义卖订单 -->
+        <!-- 是否特卖订单 -->
+       <!-- 是否海外购订单 -->
+       <!-- 优惠券金额 -->
+        <!-- 当前时间 -->
+        
+        <!-- 是否义卖订单 -->
+        <!-- 是否是海外购订单 -->
+          	  <!-- 是否特卖订单 -->
+        <!-- 邮掌柜可否查看会员订单 -->
+        <!-- 慈善特卖线下和义卖不能取消和退换货标记 -->
+             <!-- 是否邮掌柜订单-->
+        <!-- 是否是秒杀活动 -->
+        <!-- 是否可以确认收货的订单 -->
+          	<!--   显示发票信息的商家-->
+          <!-- 是否香港站订单 -->
+        <!-- 是否明信片订单 -->
+  		<!-- 是否电视购物订单 -->
+      	<!-- 是否手机充值订单-->
+          	<!-- 是否河南分销订单-->
+          	<!-- 是否兑换订单-->
+          	<!-- 是否集团采购订单-->
+          	<!-- 是否分销订单-->
+          	<!-- 是否交行订单-->
+          	<!-- 是否集团采购订单-->
+          	<!--  商城礼品券兑换订单 -->
+             <!-- 预售尾款 -->
+          	    <!-- 电子产品 -->
+      	
+      	<div class="order_status" ><span>订单号：2018013042985192</span>
+			 <!-- 
+				 <span class="already_send">
+					 已取消</span>
+			  -->
+			 <!-- 未支付订单状态和相关操作-->
+			   <!-- 通用判断，把控制未付款取消订单也进行验证 -->
+		            <!-- 通用判断，优先条件是不能包含取消的商家并且不能包含取消的订单类型 -->
+			        <!-- 付款完成和待配货订单取消-->																				
+							</div>
+			
+			
+	<!--第一部分结束-->
+	<ul class="packageInfo">
+       <!-- 设置普通包裹tab显示 -->
+       		<!-- 设置换货包裹tab显示 -->
+		  	<li class="active" >
+						<a escorderid="2018013042985192" deleveryOrderId="22883533400000" pidx="0">
+							包裹#1(<span class="package-status">已取消</span>)</a></li>
+				</ul>
+      <!--第二部分开始-->
+
+			  </div>
+		<!--第四部分结束-->
+	<div class="order_body">
+		<div class="order_tit">订单信息</div>
+		<div class="customer_info clear">
+			<div class="customer_info_left">
+				<div class="pay_info">支付信息:&nbsp;&nbsp;已支付</div>
+                <div class="">支付时间:&nbsp;&nbsp;2018-2-4 16:25</div>
+			    <div class="">订单状态:&nbsp;&nbsp;已完成</div>
+				</div>
+			<div class="customer_info_right">
+			<p class="info1">李雪莲</p>
+								<p class="cell_info">
+									     18717748909&nbsp;&nbsp;</p>
+								<p class="info2">上海上海市浦东新区德平路289号浦东邮政大厦8楼</p>
+				  				<p class="info3"></p>
+					        </div>
+		</div>
+		
+		
+		<!-- 发票信息显示(飞牛订单) -->
+	
+
+		<!-- 商品清单 -->
+		<div class="list">商品清单</div>
+		<div class="list_detail clearfix">
+		<div class="wrap_table clearfix"><table width="100%" height="100%" border="0" align="left" class="tbl" cellpadding="3">
+			<tr class="theader">
+			    <td width="20"></td>
+				<td width="255">商品名称</td>
+				<td width="20"></td>
+				<td width="165">说明</td>
+				<td width="75">数量</td>
+				<td width="100" class="center">单价(元)</td>
+				<td width="120" class="center">合计(元)</td>
+				<td width="95" class="adjust-bg2">操作</td>
+			</tr>
+			<!-- 电子产品 -->
+        	<!-- 激动营销 -->
+        	<!-- 电子期刊 -->
+        	<!-- 是否电子期刊  90仓库和2300-->
+        	<!-- 是否激动营销 -->
+	      	<!-- 计算商品总计 -->
+		         <tr class=""  id="133235701" unitPrice="2960.0" qty="1" esc_orderid="2018013042985192">
+				        <td rowspan="2" class="borderClass"></td>
+
+				                <td><span class="introduce-txt">
+									<a class="product-name"  href="//item.ule.com/ordersnap/1332357-133235701-1517288759474.html?escOrderId=2018013042985192&merchantCode=" target="_blank">老庙黄金Au999.9足金薄片投资金条好运金条10克</a></span>
+			              		</td>
+								<td></td>
+								<td>
+								<span class="introduce-txt">
+									规格:10克&nbsp;
+									</span>
+								</td>
+								<td>1</td>
+								<td class="tright" nowrap="nowrap"><!-- 单价 -->
+									
+									     <font style="color:#333">2960.00</font>&nbsp;<br/>
+								                </td>
+			               		<td class="tright"><!-- 合计 -->					                     
+					                    <font style="color:#333">2960.00</font>&nbsp;<br/>
+						                	 </td>
+			               		<td><!-- 这列是操作栏 -->
+				               		</td>
+							</tr>	
+						<!-------------------------------------------######### 订单享受的优惠 ##########-------------------------------------------> 
+				   
+				<!-------------------------------------------########## 订单享受的优惠 #########-------------------------------------------> 
+				  
+				</table></div>
+				</div>
+				<div class="prise">
+						商品总金额：￥2960.00<br/>
+						------------------------------------------<br/>
+						<b>订单支付金额：</b><span class="p1">
+						￥2972.00</span>
+			        <br />
+						<span class="apply-btn clearfix">
+					        </span>
+					</div>
+				<!-- 预售单才显示 -->
+				</div>
+	</div>
+	</div>
+  <!--内容结束-->
+  
+<!-- 村邮站相关 -->
+<div id="myClientAddressHtml" class="ClientHtml">
+	<div class="search">
+    	<span class="kaishi">客户姓名：</span>
+    	<input type="text" class="text" value="" />    
+    	<input type="button" class="sea" value=""/>
+        <input type="button" class="add" value=""/>
+    </div>
+    <ul class="Client_list">
+    </ul>
+    <div class="isbtn">
+        <div class="page" id="spage">
+        </div>
+    </div>
+    <ul class="product_list">
+        <li class="title">
+            <div>
+            	<input name="" type="checkbox" value="" class="checkbox">
+                <div class="all">全部</div>
+                <div class="mingcheng">商品名称</div>
+                <div class="danjia">单价</div>
+                <div class="shuliang">购买数量</div>
+            </div>
+        </li>
+	</ul>
+    <div class="btnDiv">
+    	<input type="button" value="" class="html_ok" id="myClientAddressHtml_ok" />
+    </div>
+</div>
+<script type="text/javascript" src="//i0.ule.com/app/livechat/v1/js/livechat-core.js"></script>
+
+
+<!-- foot-track: uspm/ule/baidu/google & rubikloud/mediav --><div style="display:none"><script>JEND.track.init();</script></div><!-- /foot-track: uspm/ule/baidu/google & rubikloud/mediav --><script type="text/javascript">
+	if(typeof(_mcfg) == "undefined"){
+		var _mcfg = {};
+	}
+	
+			_mcfg.userOnlyId = 1012997409;
+		</script><!-- 身份证信息相关 -->
+<div id="util-dialog-new" style="width: 648px;display: none;">
+	<div class="pdb-bgt"><span></span></div>
+	<div class="pdb-bgm" style="height: 497px;"></div>
+	<div class="pdb-main" style="width: 639px; height: 498px;">
+		<div class="pdb-title">
+			<h4>完善清关信息</h4>
+			<span class="close" title="关闭浮层" onclick="JEND.page.popbox.close()">关闭</span>
+		</div>
+		<div class="pdb-content" style="height: 321px;">
+			<form id="sfCheckFrom">
+				<input  type="hidden" name="escOrderid"      value="2018013042985192"/>
+				<input  type="hidden" name="identityInfoId"  value=""/>
+				<input  type="hidden" name="userName"  		 value=""/>
+				<input class="checkFileInfo hidde_frontFile" type="hidden" name="cardFrontSide"/>
+				<input class="checkFileInfo hidde_backFile" type="hidden" name="cardBackSide"/>
+				<div class="pdb-contentframe">
+					<div class="iOrfilings">
+						<div class="bIItem">
+							<label><b>*</b><span>姓名：</span></label>
+							<div class="wrap_I noborder"></div>
+						</div>
+						<div class="bIItem mt20">
+							<label><b>*</b><span>证件号码：</span></label>
+							<div class="wrap_I">
+							        <input id="usrNumHid" value="" type="hidden"/>
+									<input id="usrNum" name="cardId" value=""/>
+							</div>
+							<div class="prompt prompt_num"></div>
+						</div>
+						<div class="bIItem mt20">
+							<label><b></b><span>证件照片：</span></label>
+							<div class="photos clear">
+								<div class="pItem front">
+									<a class="select_photo"><span class="font">正面</span><input id="frontFile" name="frontFile" type="file"/></a>
+								</div>
+								<div class="pItem back rePItem">
+									<a class="select_photo"><span class="font">反面</span><input id="backFile" name="backFile" type="file"/></a>
+								</div>
+								<div class="prompt prompt_photo"></div>
+								<div class="photosTip">
+									<p><em>&nbsp;</em>上传文件格式为png 、jpg，大小在5M以内；</p>
+									<p><em>&nbsp;</em>图片清晰，文字可辨别，所有身份证或临时身份证必须在有效期内；</p>
+									<p><em>&nbsp;</em>可以添加水印“此文件只用于包裹清关使用”的字样，添加的文字不可遮挡住身份证图片上的任何可读信息，如文字、数字、照片；</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<form target="UploadIdentityFormTarget" id="UploadIdentityForm" name="UploadIdentityForm" method="post" enctype="multipart/form-data" style="display: none;">
+				<iframe id="UploadIdentityFormTarget" name="UploadIdentityFormTarget" style="display:none;"></iframe>
+				<img id="uploadImg" src="" style="display:none;">
+			</form>
+		</div>
+		<div class="pdb-bottom" style="display: block;">
+			<p data-uspm="199" class="pdb-bottom-action">
+				<a class="btn btn-cancel" onclick="JEND.page.popbox.close()"><em>取 消</em></a>
+				<a class="btn btn-action" onclick="iSubmit()"><em>确 定</em></a>
+			</p>
+		</div>
+	</div>
+</div>
+		<div class="pdb-bgb"><span></span>
+	</div>
+	
+<script>
+// ctrl+F2显示奖金 5秒后消失
+var isTrue = true ;
+function doHide(){
+	$('.rTab').hide();
+	isTrue=true;
+}
+
+$(document).ready(function() {
+	
+	$(document).keydown(function(e) {
+		if (e.ctrlKey) {
+			if(e.which == 113 && isTrue ){
+				doToggle();
+			}
+		}
+	});
+	function doToggle(){
+		var obj = this ; 
+		$(".rTab").toggle();
+		isTrue = false ;
+		setTimeout(function(){
+			obj.doHide();
+		},5000);//1000为1秒钟
+	}
+	
+});
+
+function getFileSize(input){
+	var objValue = input.value;
+	if (objValue=="") return 0;
+	var fileSize = 0;
+	try {
+		fileSize = parseInt(input.files[0].size);
+	} catch (e){
+	}
+	return fileSize;
+}
+function uploadFile(id){
+	//判断文件大小
+	var maxSize = 5*1024*1024;
+	var $input = $("#"+id);
+	var fileInput = $input[0];
+	var byteSize = getFileSize(fileInput);
+	var $prompt = $('.prompt_photo');
+	if(byteSize > maxSize) {
+		showMsg($prompt, '图片大小请控制在5M以内');
+		return;
+	}
+	//判断是否有选择上传文件
+	var imgPath = $input.val();
+	if(!imgPath) {
+		showMsg($prompt, '仅支持jpg、png格式的图片');
+		return;
+	}
+	//判断上传文件的后缀名
+	var strExtension = imgPath.substr(imgPath.lastIndexOf('.') + 1);
+	if(strExtension != 'jpg' && strExtension != 'png') {
+		showMsg($prompt, '仅支持jpg、png格式的图片');
+		return;
+	}
+	$('#UploadIdentityForm').prepend(fileInput);
+	var formTarget = $('#UploadIdentityFormTarget');
+	var iframe = formTarget[0];
+	uploadSuccessID = id;
+	if (iframe.attachEvent){
+		iframe.detachEvent("onload", uploadSuccess);
+		iframe.attachEvent("onload", uploadSuccess);
+	} else {
+		iframe.onload = function(){
+			uploadSuccess();
+		};
+	}
+	$('#UploadIdentityForm')[0].submit();
+	$('.iOrfilings .pItem.front .select_photo').append($('#frontFile'));
+	$('.iOrfilings .pItem.back .select_photo').append($('#backFile'));
+}
+var uploadSuccessID = '';
+function uploadSuccess(){
+	var id = uploadSuccessID;
+	var content = '';
+	try{ content = $('body', window.frames["UploadIdentityFormTarget"].document).html(); }
+	catch(err1){ }
+	var result = null;
+	if((typeof JSON) === 'undefined' || (typeof JSON.parse) === 'undefined') result = eval("(" + content+ ")");
+	else result = JSON.parse(content);
+	if(result) {
+		if(result.returnCode === '70000') {
+			var key = id.replace('File', '');
+			var span = $('.pItem.' + key);
+			$('.select_photo img', span).remove();
+			$('.select_photo', span).prepend('<img src="' + result.returnResult + '" width="98px" height="58px"/>');
+			$('.hidde_'+id).val(result.returnResult);
+			showMsg($('.prompt_photo'));
+		}
+	}
+}
+function showMsg($prompt, msg) {
+	if (msg) {
+		$prompt.addClass("error").removeClass("success").html(msg);
+	} else {
+		$prompt.addClass("success").removeClass("error").html("");
+	}
+	return !msg;
+}
+function iSubmit() {
+	var $elem = $("#util-dialog-new"), data = {};
+	$("input", $elem).trigger("blur");
+	if ($('.error:visible', $elem).length > 0)
+		return;
+	$("input[type='text'],input[class='checkFileInfo']").each(function() {
+		this.id && (data[this.id] = this.value);
+	});
+	$.ajax({
+		type: "post",
+		url: "/myShoppingOrderWeb/sfCheck.do",
+		data:  $("#sfCheckFrom").serialize(),
+		dataType: "json",
+		success : function(data) {
+			if(data!=null){
+				if(data.reCode){
+					JEND.page.popbox.close();
+					setTimeout(function(){ JEND.page.showLoading('身份信息修改成功'); }, 500);
+					//刷新当前页面
+					location.reload();
+				}else{
+					alert(data.msg);
+				}
+			}
+		}
+	});
+}
+$(".iOrTip .iOBtn").click(showSfzDiv);
+
+function showSfzDiv() {
+	JEND.page.popbox({ id : 'util-dialog-new' });
+	$("#usrNum").val($("#usrNumHid").val());
+	$('#UploadIdentityForm').attr('action','//my.'+ JEND.server.uleUrl +'/usr/identity/upload.do');
+	showMsg($('.prompt'));
+	$('.checkFileInfo').val('');
+	var $pItem = $('.iOrfilings .pItem');
+	$('.select_photo img', $pItem).remove();
+	$('.select_photo input', $pItem).val('');
+	$('.select_photo', $pItem).unbind('click');
+	$('.select_photo', $pItem).click(function(e){
+		$('.iOrfilings .pItem.front .select_photo').append($('#frontFile'));
+		$('.iOrfilings .pItem.back .select_photo').append($('#backFile'));
+		$('.select_photo input', $pItem).unbind('change');
+		$('input', this).change(function(){
+			uploadFile(this.id);
+		});
+	});
+}
+
+
+$("#usrNum").blur(function() {
+	var $prompt = $(this).parent().siblings(".prompt");
+	var reg = /(^\d{15}$)|(^\d{17}([0-9]|X)$)/;
+	var val = this.value.trim(), msg = "";
+	if (!val) {
+		msg = "请输入身份证号！";
+	} else if (!reg.test(val)) {
+		msg = "身份证格式有不正确,请重新输入！";
+	}
+	showMsg($prompt, msg);
+});
+</script>
+</body>
+</html>

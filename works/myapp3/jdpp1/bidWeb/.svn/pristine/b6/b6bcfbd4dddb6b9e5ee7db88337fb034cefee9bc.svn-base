@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="root61">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="keywords" content="非洲花梨木中式小金钱茶桌">
+		<meta name="description" content="非洲花梨木中式小金钱茶桌 5500.0 拍拍拍卖会 拍拍旗下拍卖网站 详尽拍品 涵盖所有拍卖类目，主营珠宝玉器、文玩字画、房产汽车等">
+		<title>VI</title>
+		<link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/saved_resource.css" />
+		<link source="widget" type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/saved_resource1.css" />
+		<link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/saved_resource2.css" source="widget" />
+		<link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/vi.min.css" source="widget" />
+		<link type="text/css" rel="stylesheet" href="//i0.ulecdn.com/eachnet/css/header.css" />
+		<link type="text/css" rel="stylesheet" href="//i0.beta.ulecdn.com/eachnet/css/dialog.css" />
+		<script src="http://i1.ulecdn.com/j/lib/jquery.js"></script>
+		<script src="http://i1.ulecdn.com/j/jend/jend.js"></script>
+		<script src="http://i0.ulecdn.com/eachnet/js/header.js"></script>
+	</head>
+
+	<body>
+		<div id="content">
+			<div class="w">
+				<div class="crumbs">
+					<a href="#">拍拍拍卖</a>
+					<span id="albumNameFlag" class="crumbs-arrow">&gt;</span>
+					<a href="#" id="albumName" target="_target">奈萌红木工艺礼品鉴赏专场</a>
+					<span class="crumbs-arrow">&gt;</span>
+					<em id="paimaiTitle"><a href="#">非洲花梨木中式小金钱茶桌</a></em>
+				</div>
+				<div class="pm-stage fn-clear">
+					<div class="pm-main">
+						<div class="pm-head fn-clear">
+							<div class="pm-head-l fn-left">
+								<!--  /widget/preview/preview.vm -->
+								<div id="preview">
+									<div class="sellout" style="display: none;">
+										<div class="scontent">已售完</div>
+									</div>
+									<div class="jqzoom">
+										<a href="" title="">
+											<img id="proImg" class="proImg" src="" alt="" width="350" height="350" s="xl">
+										</a>
+									</div>
+									<div id="idViewer" class="izViewer" style="display: none; padding: 0px; overflow: hidden;"></div>
+									<div id="spec-list" class="no_center">
+										<div class="spec-items" style="position: absolute; width: 380px; height: 62px; overflow: hidden;">
+											<ul class="lh" style="position: absolute; left: 0px; top: 0px; width: 358px;"></ul>
+										</div>
+									</div>
+
+								</div>
+								<!--/ /widget/preview/preview.vm -->
+							</div>
+							<div class="pm-head-r fn-left">
+								<h1>非洲花梨木中式小金钱茶桌</h1>
+								<!--<input type="hidden" id="currentSkuName" value="非洲花梨木中式小金钱茶桌">-->
+								<div class="pm-status fn-clear">
+									<div class="pm-status-mark pm-status-mark-will" id="paimaiwill">尚未开始</div>
+									<div class="pm-status-mark pm-status-mark-on" id="paimaion">正在进行</div>
+									<div class="pm-status-mark pm-status-mark-over" id="paimaiover">拍卖结束</div>
+									<div class="pm-time pm-will-time" id="nostart">
+										<span class="pm-time-title">距离开拍仅剩:</span>
+										<!--<span class="J_Timeleft"><span class="time-num pm-num">00</span><span>天</span><span class="time-num pm-num">7</span><span>时</span><span class="time-num pm-num">26</span><span>分</span></span>-->
+										<span class="J_Timeleft"></span>
+									</div>
+									<div class="pm-time pm-on-time" id="startting">
+										<span class="pm-time-title">距离结束仅剩:</span>
+										<!--<span class="J_Timeleft"><span class="time-num pm-num">00</span><span>天</span><span class="time-num pm-num">7</span><span>时</span><span class="time-num pm-num">26</span><span>分</span></span>-->
+									</div>
+									<div class="pm-time pm-over-time">
+										<span class="pm-time-title">结束时间:</span>
+										<span id="endTimeSpan"></span>
+									</div>
+									<div class="pm-people">
+										<span class="pm-people-cell"><em class="pm-num" id="accessSignNum">1</em>人已报名</span>
+										<span class="pm-people-cell"><em class="pm-num access" id="accessNum">98</em>次围观</span>
+									</div>
+								</div>
+								<div class="pm-operation pm-operation-n hide" id="pm-operation-ensure-n">
+									<div class="pm-money">
+										<span class="title">起 价 拍：</span>
+										<span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips="">5,500</span>
+										</span>
+									</div>
+									<div class="pm-bid">
+										<span class="title">保 证 金：</span>
+										<span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-deposit-price pm-num tips" data-tips="">300</span>
+										</span>
+										<span>不成拍则结束后退还</span>
+									</div>
+									<div class="pm-submit">
+										<a id="submitEnsure" href="https://pm.jd.com/toensure/104814968" onclick="javascript:goPay()" target="_blank" class="pm-button pm-apply-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|13">
+											<span class="icon"></span>
+											<span class="text">交保证金报名</span>
+										</a>
+									</div>
+								</div>
+								<div class="pm-operation hide" id="pm-operation-ensure-y">
+									<div class="pm-money">
+										<span class="title">起 价 拍：</span>
+										<span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips="">5,500</span>
+										</span>
+									</div>
+									<div class="pm-submit">
+										<a href="javascript:void(0)" class="pm-button pm-apply-button fn-inline-block">
+											<span class="icon"></span>
+											<span class="text">报名成功，等待开拍</span>
+										</a>
+									</div>
+								</div>
+								<div class="pm-operation pm-operation-n hide" id="pm-operation-start-n">
+									<div class="pm-money">
+										<span class="title">当 前 价：</span>
+										<span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips=""></span>
+										</span>
+										<a href="javascript:void(0)" class="pm-bid-cnt">出价<em>0</em>次</a>
+									</div>
+									<div class="pm-bid">
+										<span class="title">保 证 金：</span>
+										<span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-deposit-price pm-num tips" data-tips="">300</span>
+										</span>
+										<span>不成拍则结束后退还</span>
+									</div>
+
+									<div class="pm-submit">
+										<a id="submitEnsure1" href="https://pm.jd.com/toensure/104814968" onclick="javascript:goPay()" target="_blank" class="pm-button pm-apply-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|13">
+											<span class="icon"></span>
+											<span class="text">交保证金报名</span>
+										</a>
+									</div>
+								</div>
+								<div class="pm-operation hide" id="pm-operation-start-y">
+									<div class="pm-money">
+										<span class="title">当 前 价：</span>
+										<span class="text">
+                                        <em class="fn-rmb">¥</em>
+                                        <span class="pm-current-price pm-num tips" data-tips=""></span>
+										</span>
+										<a href="javascript:void(0)" class="pm-bid-cnt">出价<em>0</em>次</a>
+									</div>
+									<div class="pm-bid">
+										<span class="title">出　　价：</span>
+										<em class="fn-rmb">¥</em>
+										<input type="text" class="pm-price-input" value="" title="出价框，请输入拍卖价格" id="outPriceInput" onkeyup="priceDisplay(this.value, 0)">
+										<div class="detail-info-cn-money">
+											<ul class="clearfix" id="priceUnit">
+												<li>
+													<div>千</div>
+												</li>
+												<li>
+													<div>百</div>
+												</li>
+												<li>
+													<div>十</div>
+												</li>
+												<li>
+													<div>元</div>
+												</li>
+											</ul>
+										</div>
+										<a href="javascript:addPrice()" class="plus fn-inline-block" id="maxPrice" clstag="pageclick|keycount|PCpaimai_details|18"></a>
+										<a href="javascript:void(0);" class="minus fn-inline-block disabled" id="subprice" clstag="pageclick|keycount|PCpaimai_details|19"></a>
+										<span class="bid-notice">
+                                        	<span class="iconfont-pai notice-icon"></span>
+										<span class="fn-inline-block notice-text">出价成功，但被其它用户的代理价超过！</span>
+										</span>
+									</div>
+									<div class="pm-submit">
+										<a href="javascript:void(0)" id="outPrice" class="pm-button pm-bid-button pm-bid-button-result fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|20">
+											<span class="icon"></span>
+											<span class="text">出价<em></em></span>
+										</a>
+										<!--<a href="javascript:toProxybid()" class="pm-agency-button fn-inline-block">
+											<span class="icon"></span>
+											<span class="text">代理出价</span>
+										</a>-->
+									</div>
+
+								</div>
+								<div class="pm-operation hide" id="pm-operation-over">
+									<div class="bid-result" style="display: none;">
+										<h2 id="paimai_over">
+                                        <i></i>
+                                        <span class="text">拍卖已结束</span>
+                                    </h2>
+										<h3>当前价<em class="fn-rmb">¥</em><span></span></h3>
+									</div>
+									<div class="bid-result" style="display: none;">
+										<h2 id="paimai_deal">
+                                        <i></i>
+                                        <span class="text">拍卖已成交</span>
+                                    </h2>
+										<h3>成交价<em class="fn-rmb">¥</em><span></span></h3>
+									</div>
+									<div class="bid-result" style="display: none;">
+										<h2 id="paimai_liupai">
+                                        <i></i>
+                                        <span class="text">已流拍</span>
+                                    </h2>
+										<h3>当前价<em class="fn-rmb">¥</em><span></span></h3>
+									</div>
+									<div class="bid-result" style="display: none;" >
+										<h2><i></i>恭喜！您已胜出！</h2>
+										<h3>成交价：  <em id="deal_current_price"></em>&nbsp;<div id="amount_to_be_paid_div" style="display: none;">待支付金额：  <em id="amount_to_be_paid"></em><span id="amount_to_be_paid_span" style="display: none;">（保证金已抵扣部分成交款）</span></div>
+                                    </h3>
+										<p>请在72小时内完成付款，若在72小时内未付款，系统将自动关闭交易，并扣除保证金赔付给送拍机构</p>
+										<div class="pm-submit" style="width: 100%;position: relative;left: 0;top: 0;">
+											<a href="#" class="pm-button pm-pay-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|25">
+												<span class="text">去付款</span>
+											</a>
+											<a href="#" target="_blank" class="pm-button pm-order-button fn-inline-block" clstag="pageclick|keycount|PCpaimai_details|26">
+												<span class="text">查看订单</span>
+											</a>
+										</div>
+									</div>
+									<div class="bid-result" style="display: none;">
+										<h2><i></i>拍卖已成交，生成订单中…</h2>
+										<p>请在2分钟后
+											<a href="javascript:location.reload()">刷新</a>查看</p>
+									</div>
+									<div class="bid-result" >
+										<h2 id="paimai_win">
+                                        <span class="icon"></span>
+                                        <span class="text">恭喜！您已胜出！</span>
+                                    </h2>
+										<h3>当前价<em class="fn-rmb">¥</em><span id="deal_current_price_old"></span></h3>
+										<p id="submit_message">请在24小时之内提交订单；若在24小时内未提交订单，系统将自动关闭交易，并扣除您的保证金用于赔付送拍机构</p>
+										<div class="pm-submit" id="submit_order" style="display: none;" style="width: 100%;position: relative;left: 0;top: 0;">
+											<a href="#" class="pm-button pm-pay-button fn-inline-block">
+												<span class="text">提交订单</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="pm-attachment">
+									<ul class="fn-clear">
+										<li class="fore1">
+											<span class="title">起 拍 价：</span>
+											<em class="fn-rmb">¥5,500</em>
+										</li>
+										<li class="fore2">
+											<span class="title tips" data-tips="">加价下线：</span>
+											<em class="fn-rmb pm-red" id="priceRaiseLow">¥100</em>
+										</li>
+										<li class="fore3">
+											<span class="title tips" data-tips="">加价上线：</span>
+											<em class="fn-rmb pm-red" id="priceRaiseHigh">¥100</em>
+										</li>
+									</ul>
+									<ul class="fn-clear">
+										<li class="fore1">
+											<span class="title tips" data-tips="">保 留 价：</span>
+											<span id="reservePrice">无</span>
+										</li>
+										<li class="fore2">
+											<span class="title">拍卖方式：</span>
+											<span id="saleType">升价拍</span>
+										</li>
+										<li class="fore3">
+											<span class="title tips" data-tips="">佣　　金：</span>
+											<span>无</span>
+										</li>
+									</ul>
+									<ul class="fn-clear">
+										<li class="fore1">
+											<span class="title">延时周期：</span>
+											<span>5分钟/次</span>
+										</li>
+										<li class="fore2">
+											<span class="title">竞买代码：</span>
+											<span id="myNumber">暂无代码</span>
+										</li>
+									</ul>
+								</div>
+
+								<!--                            <span class="pm-notify-btn" id="setRemindBtn">
+                                <a href="javascript:toRemind()" class="btn-unsubscribe" clstag="pageclick|keycount|PCpaimai_details|1">
+                                    <span class="notify-icon fn-inline-block"></span>
+                                    <span class="notify-text">设置提醒</span>
+                                </a>
+                                <span class="notify-sub"><em class="pm-num" id="remindCount">0</em>人已设置提醒</span>
+                            </span>-->
+
+								<span class="pm-notify-btn hide" id="hasCancelRemind" style="display: none;">
+                                <a class="btn-subscribe btn-cancel">
+                                    <span class="notify-icon fn-inline-block"></span>
+								<span class="notify-text">已取消提醒</span>
+								</a>
+								</span>
+
+								<span class="pm-notify-btn" id="hasSetRemind" style="display: none;">
+                                <a href="#" class="btn-subscribe btn-cancel">
+                                    <span class="notify-icon fn-inline-block"></span>
+								<span class="notify-text">已设置提醒</span>
+								</a>
+								<div class="notify-sub">
+									<a href="javascript:cancelOrAddBeginRemind();" id="paimaiBeginBtn"><i class="fn-inline-block"></i>开拍前</a>
+									<a href="javascript:cancelOrAddEndRemind();" id="paimaiEndBtn"><i class="fn-inline-block"></i>结束前</a>
+								</div>
+								</span>
+
+								<div class="pm-support">
+									<input type="hidden" id="paimaiId" value="104814968">
+									<input type="hidden" id="skuId" value="24160125535">
+									<input type="hidden" id="ensurePrice" value="300.00">
+									<input type="hidden" id="ensureSource" value="2">
+									<input type="hidden" id="delayed" value="5">
+									<input type="hidden" id="agent" value="1">
+									<input type="hidden" id="priceLowerOffset" value="0.0">
+									<input type="hidden" id="priceHigherOffset" value="0.0">
+									<input type="hidden" id="maxPrice" value="0.0">
+									<input type="hidden" id="startPrice" value="5500.0">
+									<input type="hidden" id="vendorId" value="663795">
+									<input type="hidden" id="startTime" value="2018-01-26 22:00:00.0">
+									<input type="hidden" id="endTime" value="2018-01-27 10:00:00.0">
+									<input type="hidden" id="albumId" value="100369">
+									<input type="hidden" id="platType" value="4">
+									<input type="hidden" id="biddingCycle" value="20">
+									<span class="title">服务支持：</span>
+									<span class="text">不支持7天无理由退货
+																	</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="pm-body" id="seemore">
+							<div class="pm-bid-flow17">
+								<div class="title">竞拍流程：</div>
+								<ul>
+									<li class="fore1"><i class="icon"></i>
+										<a href="#" target="_blank">交保证金</a><i class="arrow"></i></li>
+									<li class="fore2"><i class="icon"></i>
+										<a href="#" target="_blank">参与竞拍</a><i class="arrow"></i></li>
+									<li class="fore3"><i class="icon"></i>
+										<a href="#" target="_blank">竞拍成功</a><i class="arrow"></i></li>
+									<li class="fore4"><i class="icon"></i>
+										<a href="#" target="_blank">支付货款</a><i class="arrow"></i></li>
+									<li class="fore5"><i class="icon"></i>
+										<a href="#" target="_blank">交易完成</a><i class="arrow"></i></li>
+								</ul>
+							</div>
+							<div class="pm-addition">
+								<div class="tab-menu-wrap">
+									<ul class="tab-menu fn-clear">
+										<li class="ui-tab-item curr" id="tab1">
+											<a href="#" clstag="pageclick|keycount|PCpaimai_details|33">拍品描述</a>
+										</li>
+										<li class="ui-tab-item" id="tab2">
+											<a href="#" clstag="pageclick|keycount|PCpaimai_details|34">出价记录(<span class="record-num pm-num">0</span>)</a>
+										</li>
+										<li class="ui-tab-item" id="tab3">
+											<a href="#" clstag="pageclick|keycount|PCpaimai_details|35">卖家承诺</a>
+										</li>
+										<li class="ui-tab-item" id="tab4">
+											<a href="#" clstag="pageclick|keycount|PCpaimai_details|36">保证金须知</a>
+										</li>
+									</ul>
+								</div>
+								<div class="pm-detail-tab">
+
+									<div class="ui-tab-panel">
+										<div class="pm-remind-tip17" style="margin: 15px;">
+											<div class="title">特别提示</div>
+											<ul>
+												<li><span>1.真伪：</span>上拍机构的企业相关资质已审核，但拍品介绍（包括图片、文字、视频等）以及拍品资质文件（来源证明、鉴定证书等）均由机构自行发布并上传，所有上拍的拍品由送拍机构自行承担相应担保责任；</li>
+												<li><span>2.退换货：</span>拍卖拍品不同于普通网购商品，多数属于孤品，消费者通过竞价方式购买拍品，一旦售出将影响拍品价值，“7天退货”服务为卖家可选服务保障，不强制送拍机构提供，竞拍前请充分考虑。</li>
+											</ul>
+										</div>
+
+										<div id="adition-vediod" style="margin: 20px;">
+										</div>
+										<div id="addition-desc">
+											<div class="panel-title">
+												<div class="panel-title-text">拍品描述</div>
+												<div class="panel-title-line"></div>
+											</div>
+											<div id="addition-desc-content">
+												<br>
+												<a href="./index_files/5a520afeNf6cbadd5.jpg" target="_blank">
+													<img src="./index_files/5a520afeNf6cbadd5.jpg" alt="" id="53fb1376f039409b9a2f49ccceaecde9"></a><br>
+												<a href="./index_files/5a520afeN0000c189.jpg" target="_blank">
+													<img src="./index_files/5a520afeN0000c189.jpg" alt="" id="267294156f8c447a80a83da5c26a2f5a"></a><br>
+												<a href="./index_files/5a520affNb1e1eda7.jpg" target="_blank">
+													<img src="./index_files/5a520affNb1e1eda7.jpg" alt="" id="09f845dac6da49cfbc451e2b349285dd"></a><br>
+												<a href="./index_files/5a520affNe0fce1fe.jpg" target="_blank">
+													<img src="./index_files/5a520affNe0fce1fe.jpg" alt="" id="90c69bcf97024f72b93152d50a548d8b"></a><br>
+											</div>
+										</div>
+									</div>
+									<div id="record-list" class="ui-tab-panel">
+										<div class="panel-title">
+											<div class="panel-title-text">出价记录</div>
+											<div class="panel-title-line"></div>
+										</div>
+										<dl class="record-list" id="record-list-down"></dl>
+										<!--<div class="page clearfix">
+											<div class="p-wrap"><span class="p-num"><a href="#none" class="curr" onclick="getSaleRecForRecordTab(1)">1</a><a href="#none" class=" " onclick="getSaleRecForRecordTab(2)">2</a><a href="#none" class="pn-next" onclick="getSaleRecForRecordTab(2)">下一页<i>&gt;</i></a></span></div>
+										</div>-->
+									</div>
+									<div id="seller-promise" class="ui-tab-panel selected">
+										<div class="panel-title">
+											<div class="panel-title-text">卖家承诺</div>
+											<div class="panel-title-line"></div>
+										</div>
+										<div class="article">
+											<h3>一、服务承诺</h3>
+											<h4>A.商家承诺</h4>
+											<p>1.卖家承诺所发拍品如实描述。</p>
+											<p>2.卖家成交不卖，卖家应将保证金退一赔一给竞买成功人。</p>
+											<p>3.竞拍成功后，拍品全国包邮(港澳台除外)。其中拍品重50斤以上（大件家具30斤）或面积大于2个平方不包邮，二手车、房地产、运输设备、不动产、明星见面会等也不包邮。</p>
+											<h4>B. 拍卖行承诺</h4>
+											<p>友情提示:根据中华人民共和国法律，拍卖行具有合法的拍卖经营主体资格，在中华人民共和国法律和政策允许的范围内，组织和开展拍卖活动。凡参加拍卖行组织、开展的文物、网络竞投拍卖、艺术品等收藏品拍卖活动的委托人、竞买人、买受人和其他相关各方均视为同意且应遵守《中华人民共和国拍卖法》。</p>
+											<p>1. 依据《中华人民共和国拍卖法》的规定，拍卖行承诺如实描述拍品。</p>
+											<p>2.拍卖行成交不卖，拍卖行应将保证金退一赔一向竞买成功人。</p>
+											<p>3.关于拍卖行佣金收取：依据《中华人民共和国拍卖法》的规定，竞买人在竞拍成功后，需根据拍卖行约定（商品页面描述佣金额），缴纳约定比例、数额的佣金。</p>
+											<p>4.关于运费：由竞买成功人承担，以拍卖行实际商品描述运费为准。（如：贵重商品额外保险费用需要由竞买成功人承担）。</p>
+										</div>
+										<div class="article">
+											<h3>二、竞拍活动基础服务</h3>
+											<p>1.如实描述承诺：卖家承诺如实描述，一旦发现描述不符的拍品，买家可在交易成功后指定期限内向拍拍投诉卖家。</p>
+											<p>2.保证金保障：卖家入驻竞拍平台需缴纳较高的经营保证金，买家维权有保障。</p>
+										</div>
+										<div class="article">
+											<h3>三、拍卖行特色服务</h3>
+											<h4>A. 不支持7天无理由退货</h4>
+											<p>拍卖拍品不同于普通网购商品，多数属于孤品或者数量较少，消费者通过竞价方式购买拍品，一旦售出将影响拍品价值，不支持7天无理由退货。</p>
+											<h4>B. 支持线下预览</h4>
+											<p>送拍机构如支持线下预览是指其公司已选定场地预展拍品，竞买人可在竞拍结束前，亲自或委托他人查看竞拍品实物；如竞拍者未到现场鉴赏，视默认为该竞拍品的实际属性。</p>
+											<h4>C. 关于鉴定证书</h4>
+											<p>若拍卖行选择提供鉴定证书，即卖家承诺所发布的拍品已取得省级以上鉴定证书或作者本人出具的书面鉴定文本，反之即不提供。</p>
+										</div>
+									</div>
+									<div id="deposit-notes" class="ui-tab-panel">
+										<div class="panel-title">
+											<div class="panel-title-text">保证金须知</div>
+											<div class="panel-title-line"></div>
+										</div>
+										<div class="article">
+											<h3>一、保证金的缴纳：</h3>
+											<p>保证金是竞拍人参加竞拍的凭证，如用户有意参加相关商品竞拍活动，则须缴纳卖家设置的参与竞拍活动的保证金。</p>
+											<h4>缴纳次数：</h4>
+											<p>如参加升价拍，每个商品的竞拍只需要缴纳一次保证金；</p>
+											<p>如参加降价拍，每出价一次都需要缴纳一次保证金，并且每次出价只可以竞拍一件拍品。</p>
+										</div>
+										<div class="article">
+											<h3>二、保证金的返还：</h3>
+											<h4>在符合以下条件时将原路退还用户保证金：</h4>
+											<p>1.用户未成功竞拍商品：例如在竞拍过程中始终未出价、在竞拍过程中放弃加价等情况；</p>
+											<p>2.用户竞拍成功后，商家主动关闭交易或未履约发货或因商家其他原因导致交易未完成的；</p>
+											<p>竞拍结束后，系统会自动在1-15个工作日内将款项内退还到支付账号中，如您缴纳的竞拍保证金符合退还条件，但是系统未予退还，您可以联系拍拍客服400-606-5500，我们会尽快帮您处理。</p>
+										</div>
+										<div class="article">
+											<h3>三、保证金的扣除：</h3>
+											<p>1.在升价拍竞拍成功之时起的72小时内未按照成交价格支付拍品货款的；在降价拍竞拍成功之时起的24小时内未按照成交价格支付拍品货款的。</p>
+											<p>2.在竞拍成功且付款后，竞拍人申请退款（卖家提供7天无理由退货服务的除外）。</p>
+											<p>如因卖家原因导致竞拍人不付款，竞拍人可在交易关闭的15天内联系拍拍客服400-606-5500，逾期保证金申诉不给予受理。</p>
+										</div>
+										<div class="article">
+											<h3>四、保证金抵货款：</h3>
+											<p>用户竞拍成功后，用户缴纳的保证金将自动转化为部分成交款，在用户缴纳完毕除保证金外的剩余成交款及拍卖佣金后，由拍拍将保证金、剩余成交款和拍卖佣金统一结算给送拍机构 。</p>
+										</div>
+										<div class="article">
+											<h3>五、违约责任成交不卖的违约赔偿：</h3>
+											<p>用户竞拍成功并支付成交款后，如因送拍机构原因出现了“成交不卖”的违规行为，包括但不限于关闭交易或未履约发货，送拍机构应为用户办理退款，同时，用户还将获得由送拍机构提供的金额为所缴纳保证金金额一倍的违约金作为赔偿。退款、赔偿及法律责任的追究，由送拍机构线下与用户自行联系完成。所涉款项不通过拍拍平台支付，拍拍平台亦不对此承担任何义务与法律责任。</p>
+										</div>
+										<div class="article">
+											<img data-lazy-img="done" width="910" src="./index_files/57bec429N23c3afce.jpg" class="err-poster">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="pm-sub">
+						<div class="pm-seller">
+							<a class="seller-name" id="albumNameDown" target="_blank" href="#" clstag="pageclick|keycount|PCpaimai_details|8">进入该拍卖专场</a>
+							<a class="seller-img" id="shopUri" target="_blank" href="#">
+								<img data-lazy-img="done" width="180" height="60" src="./index_files/58dba1f0N056f4960.jpg" class="" id="shopLogoUri" clstag="pageclick|keycount|PCpaimai_details|9">
+							</a>
+							<p>
+								<span class="title">送拍机构：</span>
+								<a class="seller-name" id="shopName" target="_blank" href="#" clstag="pageclick|keycount|PCpaimai_details|10">奈萌工艺品</a>
+								<!--<a class="seller-icon" id="showLicence" href="" style="display: none;" target="_blank"><span style="width: 15px;height: 12px;margin-left: 5px;"> <img src="//img11.360buyimg.com/cms/g8/M02/12/02/rBEHZ1Do73AIAAAAAAAHawg2lsEAADh1QP_9t8AAAeD885.gif" /></span></a>-->
+							</p>
+
+							<p>正在拍卖<span id="sellerCount" class="seller-num pm-num">2</span>件</p>
+							<div class="seller-btn">
+								<div class="dd" id="online-service">
+									<!--<a id="j-im" href="https://paimai.jd.com/104814968#none" clstag="pageclick|keycount|PCpaimai_details|11" title="奈萌工艺品 联系客服" class="djd-im"><b>在线客服</b></a>-->
+								</div>
+							</div>
+							<input type="hidden" id="shopId" value="658936">
+						</div>
+						<div class="records">
+							<div class="list-header">
+								<h3 id="bidCount">出价记录(0)</h3>
+							</div>
+							<div class="list-content fn-clear">
+								<dl class="record-list" id="record-list-up">
+									<dt><span class="status">状态</span> <span class="price">价格</span> <span class="user">竞拍人</span> <span class="time">时间</span> </dt>
+								</dl>
+								<a href="#seemore" class="records-btn fn-right" clstag="pageclick|keycount|PCpaimai_details|12">查看更多<i>&gt;</i></a>
+							</div>
+						</div>
+						<div class="recommend-over">
+							<div class="list-header">
+								<h3>热门拍卖</h3>
+							</div>
+							<div class="list-content">
+								<ul class="item-list">
+									<li class="item on">
+										<div class="item-info">
+											<a href="#" target="_blank" class="img-wrap" title="【95新二手】苹果7手机 国行全网4G 磨砂黑 128G内存 4.7寸  N53" clstag="pageclick|keycount|PCpaimai_details|27">
+												<img data-lazy-img="done" width="180" height="180" alt="【95新二手】苹果7手机 国行全网4G 磨砂黑 128G内存 4.7寸  N53" src="./index_files/5a604a2dN1eb90a22.jpg" class=""></a>
+											<p class="title">
+												<a href="#" target="_blank" title="【95新二手】苹果7手机 国行全网4G 磨砂黑 128G内存 4.7寸  N53">【95新二手】苹果7手机 国行全网4G 磨砂黑 128G内存 4.7寸 N53</a>
+											</p>
+										</div>
+										<div class="item-meta">
+											<p class="bid-num"><i></i><span class="pm-num">56</span>次出价</p>
+											<p class="price">¥<span class="pm-num">2351</span></p>
+										</div>
+									</li>
+									<li class="item on">
+										<div class="item-info">
+											<a href="#" target="_blank" class="img-wrap" title="永昌源 翡翠 老坑冰糯种浅绿飘绿正圈手镯  53.90g 圈口：55" clstag="pageclick|keycount|PCpaimai_details|28">
+												<img data-lazy-img="done" width="180" height="180" alt="永昌源 翡翠 老坑冰糯种浅绿飘绿正圈手镯  53.90g 圈口：55" src="./index_files/5a5c9247N5f0fa1fc.jpg" class=""></a>
+											<p class="title">
+												<a href="#" target="_blank" title="永昌源 翡翠 老坑冰糯种浅绿飘绿正圈手镯  53.90g 圈口：55">永昌源 翡翠 老坑冰糯种浅绿飘绿正圈手镯 53.90g 圈口：55</a>
+											</p>
+										</div>
+										<div class="item-meta">
+											<p class="bid-num"><i></i><span class="pm-num">3</span>次出价</p>
+											<p class="price">¥<span class="pm-num">2088</span></p>
+										</div>
+									</li>
+									<li class="item on">
+										<div class="item-info">
+											<a href="#" target="_blank" class="img-wrap" title="和田玉 手链 45.33克 和韵轩珠宝" clstag="pageclick|keycount|PCpaimai_details|29">
+												<img data-lazy-img="done" width="180" height="180" alt="和田玉 手链 45.33克 和韵轩珠宝" src="./index_files/59aa53e3N7d2c2d30.jpg" class=""></a>
+											<p class="title">
+												<a href="#" target="_blank" title="和田玉 手链 45.33克 和韵轩珠宝">和田玉 手链 45.33克 和韵轩珠宝</a>
+											</p>
+										</div>
+										<div class="item-meta">
+											<p class="bid-num"><i></i><span class="pm-num">3</span>次出价</p>
+											<p class="price">¥<span class="pm-num">201</span></p>
+										</div>
+									</li>
+									<li class="item on">
+										<div class="item-info">
+											<a href="#" target="_blank" class="img-wrap" title="苏州玉雕名家王磊作品 和田玉 挂件 玉女 国色天香 43.09克 和韵轩珠宝" clstag="pageclick|keycount|PCpaimai_details|30">
+												<img data-lazy-img="done" width="180" height="180" alt="苏州玉雕名家王磊作品 和田玉 挂件 玉女 国色天香 43.09克 和韵轩珠宝" src="./index_files/5a4f7b59N22fbc42e.jpg" class=""></a>
+											<p class="title">
+												<a href="#" target="_blank" title="苏州玉雕名家王磊作品 和田玉 挂件 玉女 国色天香 43.09克 和韵轩珠宝">苏州玉雕名家王磊作品 和田玉 挂件 玉女 国色天香 43.09克 和韵轩珠宝</a>
+											</p>
+										</div>
+										<div class="item-meta">
+											<p class="bid-num"><i></i><span class="pm-num">4</span>次出价</p>
+											<p class="price">¥<span class="pm-num">1199</span></p>
+										</div>
+									</li>
+									<li class="item on">
+										<div class="item-info">
+											<a href="#" target="_blank" class="img-wrap" title="海派玉雕大师崔哲豪作品 和田玉 摆 把件 貔貅 132.86克 和韵轩珠宝" clstag="pageclick|keycount|PCpaimai_details|31">
+												<img data-lazy-img="done" width="180" height="180" alt="海派玉雕大师崔哲豪作品 和田玉 摆 把件 貔貅 132.86克 和韵轩珠宝" src="./index_files/5a4f916aNbc418cee.jpg" class=""></a>
+											<p class="title">
+												<a href="#" target="_blank" title="海派玉雕大师崔哲豪作品 和田玉 摆 把件 貔貅 132.86克 和韵轩珠宝">海派玉雕大师崔哲豪作品 和田玉 摆 把件 貔貅 132.86克 和韵轩珠宝</a>
+											</p>
+										</div>
+										<div class="item-meta">
+											<p class="bid-num"><i></i><span class="pm-num">5</span>次出价</p>
+											<p class="price">¥<span class="pm-num">2688</span></p>
+										</div>
+									</li>
+									<li class="item on">
+										<div class="item-info">
+											<a href="#" target="_blank" class="img-wrap" title="永昌源翡翠 冰糯种飘绿正圈手镯 内径：55.5mm  56.04g" clstag="pageclick|keycount|PCpaimai_details|32">
+												<img data-lazy-img="done" width="180" height="180" alt="永昌源翡翠 冰糯种飘绿正圈手镯 内径：55.5mm  56.04g" src="./index_files/5a5891edN1ff0b87f.jpg" class=""></a>
+											<p class="title">
+												<a href="#" target="_blank" title="永昌源翡翠 冰糯种飘绿正圈手镯 内径：55.5mm  56.04g">永昌源翡翠 冰糯种飘绿正圈手镯 内径：55.5mm 56.04g</a>
+											</p>
+										</div>
+										<div class="item-meta">
+											<p class="bid-num"><i></i><span class="pm-num">2</span>次出价</p>
+											<p class="price">¥<span class="pm-num">1588</span></p>
+										</div>
+									</li>
+									<li class="item on">
+										<div class="item-info">
+											<a href="#" target="_blank" class="img-wrap" title="苏州名家韦龙作品 和田玉 把件 油润细腻 封侯拜相 93.89克 和韵轩珠宝" clstag="pageclick|keycount|PCpaimai_details|33">
+												<img data-lazy-img="done" width="180" height="180" alt="苏州名家韦龙作品 和田玉 把件 油润细腻 封侯拜相 93.89克 和韵轩珠宝" src="./index_files/5a5a1ebaNe501b07c.jpg" class=""></a>
+											<p class="title">
+												<a href="#" target="_blank" title="苏州名家韦龙作品 和田玉 把件 油润细腻 封侯拜相 93.89克 和韵轩珠宝">苏州名家韦龙作品 和田玉 把件 油润细腻 封侯拜相 93.89克 和韵轩珠宝</a>
+											</p>
+										</div>
+										<div class="item-meta">
+											<p class="bid-num"><i></i><span class="pm-num">3</span>次出价</p>
+											<p class="price">¥<span class="pm-num">1099</span></p>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="pm-footer">
+			<div class="w">
+				<ul class="pm-slogan" id="pm-slogan">
+					<li class="fore0"><i class="paimaiicon slogan-icon0"></i>
+						<h5>如实描述承诺</h5>
+						<p>送拍机构在发拍品时会履行实物描述义务</p>
+					</li>
+					<li class="fore1"><i class="paimaiicon slogan-icon0"></i>
+						<h5>保证金保障</h5>
+						<p>送拍机构都会缴纳足额保证金来确保安全</p>
+					</li>
+					<li class="fore2"><i class="paimaiicon slogan-icon0"></i>
+						<h5>售后服务保障</h5>
+						<p>送拍机构承诺提供全面的售后服务</p>
+					</li>
+				</ul>
+				<div id="what-list">
+					<dl class="fore0">
+						<dt>拍卖流程常见问题</dt>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_0">如何报名参加竞拍?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_1">报名后如何出价?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_2">如何才能获拍?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_3">获拍后如何支付货款?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_4">收货与售后</a>
+						</dd>
+					</dl>
+					<dl class="fore1">
+						<dt>保证金常见问题</dt>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_5">保证金的缴纳</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_6">保证金的退还</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_7">保证金的扣除</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_8">保证金抵货款规则</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank">怎么查询我的保证金?</a>
+						</dd>
+					</dl>
+					<dl class="fore2">
+						<dt>拍卖行常见问题</dt>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_9">支付方式有哪些?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_10">在线支付常见问题?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_11">网银支付限额</a>
+						</dd>
+					</dl>
+					<dl class="fore3">
+						<dt>其他的常见问题</dt>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_12">竞拍的商品来源是什么?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_13">竞拍成功不想要了怎么办?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_14">竞拍商品的配送时间需要多久?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_15">竞拍商品支持七天无理由退货吗?</a>
+						</dd>
+						<dd>
+							<a href="#" target="_blank" clstag="channel|keycount|PCzhenpin|Footer_1_12_16">更多常见问题</a>
+						</dd>
+					</dl>
+					<dl class="fore4">
+						<dt>关注拍卖公众号</dt>
+						<dd>
+							<div class="public-name">
+								<img width="73" height="73" src="./index_files/592583fcN9be5d3ce.jpg" alt="">
+								<p>立即关注公众号<br> 拍品捡漏不放过
+								</p>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div id="ui-dialog" class="ui-dialog" style="width: 420px; position: absolute; z-index: 10000; display: none; overflow: hidden; top: 377px; left: 720.5px;">
+			<div class="ui-dialog-title" style="width: 400px;"> <span>提示</span> </div>
+			<div class="ui-dialog-content" style="height: 138px; width: 400px; overflow: hidden;">
+				<div class="tip-box warn-box">
+					<h3 class="fc-yellow">恭喜您！</h3>
+					<div class="box-cont">
+						<div class="op-btns">
+							<a class="a-link" href=""></a>
+							<a href="javascript:jdThickBoxclose()">出价成功</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="ui-dialog-close" title="关闭"><span class="ui-icon ui-icon-delete"></span></a>
+		</div>
+		<script type="text/javascript" src="//i0.beta.ulecdn.com/eachnet/js/vi.js"></script>
+		<!--<script type="text/javascript" src="vi.js"></script>-->
+		<script type="text/javascript" src="http://i0.ulecdn.com/eachnet/js/jqzoom.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,10 @@
+
+svn: http://svn.tomshopping.com/shanghai/eachnet/trunk/bid/bidWeb
+beta页面： http://bid.beta.eachnet.com/bidWeb/b_user/login.html
+
+从京东上扒下来的本地文件路径：C:\Users\wangxu02\AppData\Roaming\Mozilla\Firefox\Profiles\lhs5nu1a.default\ScrapBook\data
+
+0.登录页：http://192.168.113.69:18888/swagger-ui.html#!/bid-user-controller/userLoginUsingPOST
+1.首页：https://paipai.jd.com/auction/list?cpdad=1DLSUE
+2.我的竞拍：https://paipai.jd.com/auctionRecord/recordList?showStatus=3   https://auction.jd.com/myMoneyList.html
+3.交保证金：https://pm.jd.com/ensure/104888265

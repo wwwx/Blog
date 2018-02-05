@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
+    <title>我的拍卖</title>
+    <link rel="stylesheet" href="http://i0.beta.ulecdn.com/eachnet/css/header.css" />
+    <link rel="stylesheet" href="http://i0.beta.ulecdn.com/eachnet/css/_mytreasure.css">    
+    <script src="http://i0.ulecdn.com/j/lib/jquery.js"></script>
+    <script src="http://i0.ulecdn.com/j/jend/jend.js"></script>
+    <script src="http://i0.beta.ulecdn.com/eachnet/js/header.js"></script>
+  </head>
+
+
+  <body>
+    <div class="w">
+
+      <div class="gclist clearfix" style="border-bottom: medium none;">
+
+        <div class="tab">
+          <div class="w">
+            <div class="tab-item">
+              <span class="tab-0">我的竞价</span>
+              <span class="tab-1">我的服务费</span>
+              <span class="tab-2 tab-tag">我的获拍</span>
+            </div>
+          </div>
+        </div><!--/tab-->
+
+      <div class="auction-order">
+        <table class="tb-void">
+          <colgroup>
+            <col width="40%"></col>
+            <col width="15%"></col>
+            <col width="15%"></col>
+            <col width="15%"></col>
+            <col width="15%"></col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>竞价名称</th>
+              <th>交易时间</th>
+              <th>订单金额(含服务费)</th>
+              <th>交易状态</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+
+      <div class="page clearfix">
+        <div class="p-wrap">
+          <span class="p-num">
+            <a class="pn-prev disabled" href="###">&lt;
+              <em>上一页</em></a>
+            <a href="###">1</a>
+            <a class="pn-next disabled" href="###">
+              <em>下一页</em>&gt;</a></span>
+        </div>
+      </div><!--/page-->
+
+    </div>
+
+    <script src="http://i0.beta.ulecdn.com/eachnet/js/_mytreasure.js"></script>
+  </body>
+</html>

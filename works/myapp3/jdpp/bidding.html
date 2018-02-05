@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="UTF-8">
+    <title>京东拍卖</title>
+
+    <link media="all" href="./css/bidding.css" type="text/css" rel="stylesheet">
+    <body>
+        <div id="container" class="w" style="background-color: #fff;">
+
+            <!--  /widget/gclist/gclist.tpl -->
+            <div class="gclist clearfix" style="border-bottom:none;">
+                <div class="tab">
+                    <div class="w">
+                        <div class="tab-item">
+                            <span class="tab-0 tab-tag" onclick="javascript:">我的竞拍</span>
+                            <span class="tab-1" onclick="javascript:">我的保证金/变卖金</span>
+                            <span class="tab-2" onclick="javascript:">我的获拍</span>
+                            <!-- <span class="tab-3" onclick="javascript:window.location.href='/myRemindList.html'">我的提醒</span>
+                            <span class="tab-4" onclick="javascript:window.location.href='/auctionLoanListPage.html'">我的贷款</span>
+                            <span class="tab-5" onclick="javascript:window.location.href='/myServiceList.html'">我的服务</span> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="auction-order">
+                <table class="tb-void">
+                    <colgroup>
+                    <col width="40%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>竞拍名称</th>
+                        <th>竞拍编号</th>
+                        <th>保证金/变卖金金额</th>
+                        <th>保证金/变卖金状态</th>
+                        <th>支付时间</th>
+                        <th>返还时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fristTd">
+                            <a href="###" target="blank" class="pic" clstag="pageclick|keycount|PCauction_myMoneyList|1"><img width="100" height="100" class="err-product" src="image/bidding/5a535470N62ee40f8.jpg"></a>
+                            <span class="name">
+                                <a href="###" target="blank" title="非洲花梨木中式小金钱茶桌" clstag="pageclick|keycount|PCauction_myMoneyList|1">非洲花梨木中式小金钱茶桌</a>
+                            </span>
+                            <span class="offer gray">
+                                由第三方发货
+                            </span>
+
+                        </td>
+                        <td valign="top">
+                            104814968
+                            <div class="pat up"></div>
+
+                        </td>
+                        <td valign="top">¥300.00</td>
+                        <td valign="top">
+                            <span>未支付</span>
+                            <input type="hidden" id="url_104814968" value=""/>
+
+                            <div class="mt5" style="display:none;" id="pay_104814968">
+                                <a href="javascript:" class="pay">立即支付</a>
+                            </div>
+                        </td>
+                        <td valign="top">
+                            <span class="gray"></span>
+                        </td>
+                        <td valign="top">
+                            <span class="gray"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fristTd">
+                            <a href="###" target="blank" class="pic" clstag="pageclick|keycount|PCauction_myMoneyList|2"><img width="100" height="100" class="err-product" src="image/bidding/59ae1b2eNb8e970f7.jpg"></a>
+                            <span class="name">
+                                <a href="image/bidding" target="blank" title="美国艾罗伯特（iRobot） 扫地机 651（样品机）" clstag="pageclick|keycount|PCauction_myMoneyList|2">美国艾罗伯特（iRobot） 扫地机 651（样品机）</a>
+                            </span>
+                            <span class="offer gray">
+                                由第三方发货
+                            </span>
+
+                        </td>
+                        <td valign="top">
+                            104827859
+                            <div class="pat up"></div>
+
+                        </td>
+                        <td valign="top">¥1.00</td>
+                        <td valign="top">
+
+                            <span>已支付</span>
+
+                        </td>
+                        <td valign="top">
+                            <span class="gray">2018-1-22 16:59:43</span>
+                        </td>
+                        <td valign="top">
+                            <span class="gray"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page clearfix">
+            <div class="p-wrap">
+                <span class="p-num">
+                    <a class='pn-prev disabled' href='###'>&lt;<em>上一页</em></a>
+                    <a href='###' style='background-color:#ddd;'>1</a>
+                    <a class='pn-next disabled' href='###'><em>下一页</em>&gt;</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="text/template" id="tjid">
+        // <div class="jbox jbox-pay clearfix" data-url="#">
+        //     <div class="jbox-left"></div>
+        //     <div class="jbox-content">
+        //         <p class="mt-msg">您需要支付保证金:¥100.00</p>
+        //         <p class="wenzi">获拍成功后<br>如果您未出价</p>
+        //         <div class="jbox-btn">
+        //             <a href="javascript:jumpPay("+paimaiId+")" class="jbox-btn-red">提交保证金</a>
+        //             <a href="javascript:jdThickBoxclose()" class="jbox-btn-gray">取消</a>
+        //         </div>                  
+        //     </div>                  
+        // </div>
+    </script>
+
+</body>
+</html>

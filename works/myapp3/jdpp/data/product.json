@@ -1,0 +1,74 @@
+{
+  "returnCode": "SUCCESS",
+  "returnMsg": "成功",
+  "data": {
+    "pageNum": 0,
+    "pageSize": 10,
+    "total": 100,
+    "data": [
+      {
+        "itemName": "马德制杖",
+        "status": 1,
+        "imageUrl": "http://pic.ulecdn.com/pic/user_800131126/product/prd20171121/d1111418d81ced3f_p706x485_xl.jpg",
+        "beginTime": "2018-02-01 11:00:00",
+        "endTime": "2018-02-06 21:00:00",
+        "secondHandDegree": 9,
+        "startingPrice": 1
+      },
+      {
+        "itemName": "马德制杖",
+        "status": 1,
+        "imageUrl": "http://pic.ulecdn.com/pic/user_800131126/product/prd20171121/d1111418d81ced3f_p706x485_xl.jpg",
+        "beginTime": "2018-02-06 21:00:00",
+        "endTime": "2018-02-06 21:00:00",
+        "secondHandDegree": 9,
+        "startingPrice": 1
+      },
+      {
+        "itemName": "马德制杖",
+        "status": 1,
+        "imageUrl": "http://pic.ulecdn.com/pic/user_800131126/product/prd20171121/d1111418d81ced3f_p706x485_xl.jpg",
+        "beginTime": "2018-02-06 21:00:00",
+        "endTime": "2018-02-06 21:00:00",
+        "secondHandDegree": 9,
+        "startingPrice": 1
+      },
+      {
+        "itemName": "马德制杖",
+        "status": 1,
+        "imageUrl": "http://pic.ulecdn.com/pic/user_800131126/product/prd20171121/d1111418d81ced3f_p706x485_xl.jpg",
+        "beginTime": "2018-02-06 21:00:00",
+        "endTime": "2018-02-06 21:00:00",
+        "secondHandDegree": 9,
+        "startingPrice": 1
+      },
+      {
+        "itemName": "马德制杖",
+        "status": 1,
+        "imageUrl": "http://pic.ulecdn.com/pic/user_800131126/product/prd20171121/d1111418d81ced3f_p706x485_xl.jpg",
+        "beginTime": "2018-02-06 21:00:00",
+        "endTime": "2018-02-06 21:00:00",
+        "secondHandDegree": 9,
+        "startingPrice": 1
+      },
+      {
+        "itemName": "马德制杖",
+        "status": 1,
+        "imageUrl": "http://pic.ulecdn.com/pic/user_800131126/product/prd20171121/d1111418d81ced3f_p706x485_xl.jpg",
+        "beginTime": "2018-02-06 21:00:00",
+        "endTime": "2018-02-06 21:00:00",
+        "secondHandDegree": 9,
+        "startingPrice": 1
+      },
+      {
+        "itemName": "马德制杖",
+        "status": 1,
+        "imageUrl": "http://pic.ulecdn.com/pic/user_800131126/product/prd20171121/d1111418d81ced3f_p706x485_xl.jpg",
+        "beginTime": "2018-02-06 21:00:00",
+        "endTime": "2018-02-06 21:00:00",
+        "secondHandDegree": 9,
+        "startingPrice": 1
+      }
+    ]
+  }
+}
